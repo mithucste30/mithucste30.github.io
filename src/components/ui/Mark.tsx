@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { companyLogoRaw, companyLogoUrl, techIconRaw } from '../../lib/media';
+import { companyLogoRaw, companyLogoUrl, projectImageUrl, techIconRaw } from '../../lib/media';
 import { initials } from '../../lib/data';
 
 function hashStr(s: string): number {
@@ -117,8 +117,22 @@ export function ProjectArt({
   company: string;
   className?: string;
 }) {
+  const url = projectImageUrl(name);
   const kind = useMemo(() => classify(name, company), [name, company]);
   const h = hashStr(name);
+  if (url) {
+    return (
+      <div className={`relative overflow-hidden rounded-lg border border-edge bg-panel-2 ${className}`}>
+        <img
+          src={url}
+          alt={`${name} — abstract visual`}
+          loading="lazy"
+          className="h-full w-full object-cover opacity-90 transition-transform duration-700 ease-out group-hover:scale-[1.04] group-hover:opacity-100"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-canvas/40 via-transparent to-transparent" />
+      </div>
+    );
+  }
   return (
     <div className={`relative overflow-hidden rounded-lg border border-edge bg-panel-2 ${className}`}>
       <svg viewBox="0 0 320 180" className="h-full w-full text-accent" preserveAspectRatio="xMidYMid slice">
