@@ -78,7 +78,7 @@ export function Overview({ setLens }: { setLens: (l: Lens) => void }) {
         {/* identity */}
         <div className="min-w-0">
           <div className="label mb-3">platform engineer · architect · AI-native</div>
-          <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="font-sans text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             {profile.name}
           </h1>
           <p className="mt-4 max-w-2xl text-balance text-base text-mute sm:text-lg">
