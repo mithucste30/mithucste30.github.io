@@ -56,7 +56,7 @@ export function CompanyCard({ exp, index, onSkillClick }: Props) {
         </div>
       </div>
 
-      <p className="mt-4 max-w-3xl text-sm leading-relaxed text-mute">{exp.description}</p>
+      <p className="mt-4 text-sm leading-relaxed text-mute">{exp.description}</p>
 
       {/* highlights */}
       <ul className="mt-4 space-y-2">
