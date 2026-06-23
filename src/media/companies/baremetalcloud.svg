@@ -1,0 +1,10 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="12" y="13" width="40" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="3.4"/>
+  <rect x="12" y="26.5" width="40" height="11" rx="2.5" fill="currentColor" fill-opacity="0.9"/>
+  <rect x="12" y="40" width="40" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="3.4"/>
+  <circle cx="45" cy="32" r="1.9" fill="var(--c-canvas)"/>
+  <circle cx="45" cy="19" r="1.7" fill="currentColor"/>
+  <circle cx="45" cy="45.5" r="1.7" fill="currentColor"/>
+  <rect x="19" y="17.5" width="12" height="2" rx="1" fill="currentColor"/>
+  <rect x="19" y="44.5" width="12" height="2" rx="1" fill="currentColor"/>
+</svg>

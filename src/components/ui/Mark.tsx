@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { companyLogoUrl, techIconRaw } from '../../lib/media';
+import { companyLogoRaw, companyLogoUrl, techIconRaw } from '../../lib/media';
 import { initials } from '../../lib/data';
 
 function hashStr(s: string): number {
@@ -42,7 +42,18 @@ function Emblem({ name, size = 44 }: { name: string; size?: number }) {
 }
 
 export function CompanyMark({ name, size = 44 }: { name: string; size?: number }) {
-  const url = companyLogoUrl(name);
+  const raw = companyLogoRaw(name);
+  const url = companyLogoRaw(name) ? null : companyLogoUrl(name);
+  if (raw) {
+    return (
+      <span
+        className="marksvg relative inline-flex shrink-0 items-center justify-center rounded-lg border border-edge bg-panel-2 text-accent transition-colors duration-300 hover:border-accent/50"
+        style={{ width: size, height: size, padding: size * 0.2 }}
+        dangerouslySetInnerHTML={{ __html: raw }}
+        aria-hidden
+      />
+    );
+  }
   if (url) {
     return (
       <img
