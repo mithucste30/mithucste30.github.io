@@ -1,4 +1,6 @@
-@import '@fontsource-variable/inter';
+@import '@fontsource/ubuntu/400.css';
+@import '@fontsource/ubuntu/500.css';
+@import '@fontsource/ubuntu/700.css';
 @import '@fontsource-variable/jetbrains-mono';
 @import '@fontsource-variable/bricolage-grotesque';
 
@@ -60,7 +62,7 @@
   body {
     background-color: var(--c-canvas);
     color: var(--c-ink);
-    font-family: 'Inter Variable', Inter, system-ui, sans-serif;
+    font-family: 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
