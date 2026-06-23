@@ -1,0 +1,496 @@
+# Portfolio master record — union of source CV + all generated company CVs.
+# Companies are scoped to source/cv_original.md only. Generated CVs enrich
+# existing companies (highlights, stack, skills); they never add new companies.
+# Near-duplicate task bullets are merged into the richest phrasing.
+# Every highlight / skill / summary is tagged with its source CV(s).
+# Consumed downstream by the frontend builder skill (FE not generated here).
+version: 1
+last_updated: 2026-06-21
+
+source_key:
+  source: "source/cv_original.md"
+  oneleet: "companies/oneleet/backend_engineer/cv.md"
+  exnaton: "companies/exnaton/fullstack_engineer/cv.md"
+  optimizely: "companies/optimizely/onboarding_solutions_architect/cv.md"
+  zipdev: "companies/zipdev/senior_full_stack_engineer/cv.md"
+
+profile:
+  name: MD MAZHARUL ISLAM
+  headline: "Platform Engineer · Software Architect · Backend (Go & Ruby on Rails) · DevOps/SRE · AI-Native Developer"
+  location: Dhaka, Bangladesh
+  email: mithu.cste.30@gmail.com
+  phone: "+8801911255016"
+  website: https://github.com/mithucste30
+  social:
+    github: mithucste30
+    linkedin: mithucste30
+  summaries:
+    - source: source
+      text: >-
+        Platform Engineer and Software Architect with 12+ years of experience building infrastructure platforms from bare metal to cloud. Specialises in designing multi-cloud compute substrates, multi-tenant isolation systems, and application platforms for autonomous agents. Production-grade expertise in Go and Ruby on Rails, with deep hands-on experience provisioning application platforms on bare-metal infrastructure, building WebSocket-based agent systems, and multi-cloud VM provisioning across AWS, GCP, Azure, Hetzner, and OVHcloud. AI-native engineer — daily user of Claude Code, Codex, and agent-based development workflows.
+    - source: oneleet
+      text: >-
+        Backend engineer with 12+ years building production services, including 6+ years designing and shipping Go backends and REST APIs. Most recently shipped ~200 REST API endpoints across 16 domains in Go (Fiber) on PostgreSQL, TimescaleDB, and Redis as a founding engineer. Strong on PostgreSQL schema design and query optimization, third-party API integrations, observability (metrics + distributed tracing), queue-based job orchestration, and security best practices — with direct DevSecOps experience well-suited to a security and compliance platform.
+    - source: exnaton
+      text: >-
+        Fullstack Engineer and DevOps Specialist with 12+ years of experience building scalable cloud-native applications and operating production infrastructure. Expert in microservices architecture, event-driven systems, and Kubernetes orchestration with deep hands-on experience in Next.js frontend development, polyglot backends (Go, Ruby, Python, Node.js), and AWS infrastructure. Proven track record delivering 60%+ infrastructure cost reductions and maintaining 99.9%+ availability.
+    - source: optimizely
+      text: >-
+        Software and platform architect with 12+ years progressing from full-stack engineer to solutions and software architect. Dedicated Solutions Architect experience at Seedrs (UK, $2.3B+ platform) leading customer integrations and data migrations, plus founding-engineer architecture of an AI-agent platform at BareMetalCloud. Customer-facing discovery, migration leadership, and technical enablement across MarTech, CMS, and AI platforms. Career combines sequential full-time roles with concurrent part-time and contract engagements.
+    - source: zipdev
+      text: >-
+        Senior Full-Stack Engineer and Technical Leader with 12+ years experience, including 7+ years deep expertise in Ruby on Rails and PostgreSQL. Expert in end-to-end systems ownership, architectural guidance, and driving complex initiatives in fast-paced environments. AI-native developer reshaping the SDLC using Claude Code, agent-based workflows, and AI-driven development. Proven track record leading cross-functional teams, mentoring engineers, and delivering production Rails monoliths at scale.
+
+skills:
+  - category: AI Tools & AI-Native Development
+    items: [Claude Code, Codex, Agent-Based Workflows, Multi-Agent Systems, MCP Servers, AI-Native SDLC, AI Pair Programming, Prompt Engineering, RAG Workflows, Vector Databases, Embedding Services, LLM Output Optimization]
+    sources: [source, exnaton, optimizely, zipdev]
+
+  - category: Backend Development & APIs
+    items: [Golang (Fiber, Echo, Gin), Ruby on Rails (3-7), Monolith Architecture, Service Objects, Rails Engines, Python, Node.js, Java Spring Boot, Swift (Vapor), C#, REST API Design, RESTful APIs, JSON:API, GraphQL, Microservices Architecture]
+    sources: [source, oneleet, exnaton, optimizely, zipdev]
+
+  - category: Frontend Development
+    items: [React.js, Next.js, AngularJS (1 & 2), JavaScript, TypeScript, Stimulus JS, Hotwire, Turbo, Tailwind CSS, ERB, View Components, WebSocket, Server-Sent Events (SSE), HTML5, CSS3, D3.js, Data Visualization, Component Libraries]
+    sources: [source, exnaton, optimizely, zipdev]
+
+  - category: Databases
+    items: [PostgreSQL (Schema Design, Query Optimization, Indexing, Connection Pooling, Replication, CloudNativePG, WAL Archiving, Barman), TimescaleDB, MySQL, MongoDB, Redis, DynamoDB, Cassandra, Neo4j, Vector Databases]
+    sources: [source, oneleet, exnaton, optimizely, zipdev]
+
+  - category: Messaging, Streaming & Background Processing
+    items: [Apache Kafka, RabbitMQ, AWS SQS/SNS, Redis Pub/Sub, Asynq (Distributed Job Queues), Sidekiq, Resque, ActiveJob, Event-Driven Design, Distributed Systems, Dead Letter Queues, Retry Logic]
+    sources: [source, oneleet, exnaton, zipdev]
+
+  - category: Observability & SRE
+    items: [Prometheus, Grafana, Loki, Tempo, Datadog, PagerDuty, Alertmanager, Pyroscope, cAdvisor, BotKube, Distributed Tracing, SLO/SLA Definition, Incident Management, On-Call, Post-Mortems, Capacity Planning, Cost Modelling]
+    sources: [source, oneleet, exnaton, optimizely, zipdev]
+
+  - category: Cloud Platforms
+    items: [AWS (EKS, ECS/Fargate, EC2, RDS Aurora, Lambda, S3, CloudFront, IAM, Route 53, VPC, ALB/NLB, DynamoDB, OpenSearch, CodePipeline, WAF, KMS, EventBridge, Redshift, Cognito, SES/SNS/SQS, ACM, SSM), GCP (GKE, Compute Engine, Pub/Sub, Firestore, Speech-to-Text), Azure (AKS, Blob Storage, Cosmos DB, Azure AD, Azure VM), Heroku, Bare-metal/VPS (Hetzner, OVHcloud, Contabo, DigitalOcean)]
+    sources: [source, oneleet, exnaton, optimizely, zipdev]
+
+  - category: Containers, Orchestration & IaC
+    items: [Kubernetes (k3s, k0s, MicroK8s HA, bare-metal, EKS/AKS/GKE), Docker, Docker Compose, Helm, KEDA, VPA, Rancher RemoteDialer, Terraform v1.0+ (multi-cloud, modular), Ansible, GitOps, Cloud-Init, Packer]
+    sources: [source, oneleet, exnaton, optimizely, zipdev]
+
+  - category: CI/CD & Developer Experience
+    items: [GitHub Actions (self-hosted runners/ARC), GitLab CI/CD (self-hosted), Drone CI, CircleCI, Jenkins, CodeBuild/CodePipeline, CI/CD Pipeline Design, Developer Experience]
+    sources: [source, oneleet, exnaton, optimizely, zipdev]
+
+  - category: Networking
+    items: [Overlay/mesh networking, Envoy Proxy, Traefik v2 (OIDC, middleware), Cert-Manager, Cloudflare (DNS, CDN, WAF, Tunnels), MetalLB, Nginx, VPC peering, SOCKS proxy, CGNAT]
+    sources: [source, exnaton]
+
+  - category: Security & Compliance
+    items: [Security Best Practices, DevSecOps, Envelope Encryption (KEK/DEK, AES-256-GCM), Argon2id, HashiCorp Vault, Secret Management, HMAC Message Signing, SSRF Protection, Kyverno (Policy-as-Code), Zitadel (SSO/OIDC), k8s-replicator, RBAC, Network Policies, Pod Security Standards, IAM Least-Privilege, KMS Encryption, PCI Compliance, Audit Logging]
+    sources: [source, oneleet, exnaton, optimizely, zipdev]
+
+  - category: Integration Development & Data Processing
+    items: [Third-Party API Integration, Webhooks, Data Synchronization, Custom Tooling, CRUD Operations, ETL Pipelines, Data Migration, JSON/XLSX/CSV Manipulation, Large Datasets, Import/Export Processing]
+    sources: [source, oneleet, optimizely, exnaton, zipdev]
+
+  - category: Marketing Technology
+    items: [CMS, E-commerce Platforms (Spree Commerce), Content Marketing Platforms, Recommendation Engines, Analytics Integration, Marketing Automation, Multi-tenant Architecture (apartment gem)]
+    sources: [source, optimizely, zipdev]
+
+  - category: Testing & Quality
+    items: [RSpec, TDD/BDD, FactoryBot, SimpleCov, CI/CD Testing, Code Review Standards, Test Coverage 90%+]
+    sources: [source, zipdev]
+
+  - category: Solutions Architecture & Customer Onboarding
+    items: [Customer-Facing Technical Roles, Solution Design, Integration Architecture, Migration Leadership, Technical Discovery, Pre-Sales Scoping, Workshops & Enablement, LLD to HLD System Design]
+    sources: [source, optimizely]
+
+  - category: Technical Leadership
+    items: [Architecture Guidance, End-to-End Ownership, Cross-Functional Leadership, Mentoring Engineers, Design Reviews, Agile/Scrum, Managing 15+ Engineer Teams]
+    sources: [source, zipdev, optimizely]
+
+  - category: Scripting & Automation
+    items: [Bash (infrastructure automation, backup/restore, health checks), Python (monitoring agents, DB tooling, ML data pipelines)]
+    sources: [source, exnaton, optimizely]
+
+experience:
+  - company: BareMetalCloud
+    roles:
+      - {title: Founding Platform Engineer, sources: [source, oneleet, optimizely]}
+      - {title: Founding Platform Engineer & Fullstack Architect, sources: [exnaton]}
+      - {title: Senior Backend Engineer, sources: [zipdev]}
+    location: Turkey (Remote)
+    start_date: 2026-03
+    end_date: present
+    employment_type: full-time
+    description: >-
+      Greenfield founding-engineer role: designed and built a bare-metal cloud and application platform for AI agents from scratch — the compute layer agents provision, deploy isolated workloads on, and self-manage at runtime through purpose-built APIs.
+    highlights:
+      - text: "Founding engineer on a bare-metal cloud and application platform built for AI agents; designed and shipped ~200 REST API endpoints across 16 domains in Go (Fiber) with a React frontend, on PostgreSQL, TimescaleDB, and Redis"
+        sources: [source, oneleet, optimizely, exnaton]
+      - text: "Built a unified multi-cloud provider abstraction across AWS EC2, GCP Compute Engine, Azure VMs, and bare-metal/VPS providers (Contabo, Multipass), with live credential validation, encrypted secret storage, per-provider options APIs (regions, instance types, images), capacity planning, and per-tenant quota enforcement"
+        sources: [source, oneleet, optimizely, exnaton]
+      - text: "Engineered an application platform provisioning hard-isolated runtime environments on bare-metal nodes, abstracting k3s, k0s, and MicroK8s behind a common interface — parallel provisioning, JIT node joining, HA multi-master topology, handling 30+ concurrency edge cases across distributed backend instances"
+        sources: [source, oneleet, exnaton]
+      - text: "Built a cross-cloud overlay/mesh network (provider-agnostic: VPC, mesh, auto network types) enabling secure VM-to-VM connectivity across heterogeneous clouds, with Envoy proxy providing unified routing across the fleet"
+        sources: [source, exnaton]
+      - text: "Designed a reverse-tunnel agent system for remote management — agents run inside user compute with zero inbound ports and the platform dials back on demand; covers multi-platform binary distribution (Helm, curl-install), capability discovery, heartbeat health monitoring, and cryptographically safe token-exchange registration"
+        sources: [source]
+      - text: "Implemented multi-tenant isolation and security: envelope encryption (KEK/DEK, AES-256-GCM) for field-level data, a zero-knowledge vault with Argon2id key derivation, SSRF protection, HMAC message signing with nonce replay protection, and API-key lifecycle management with rotation grace periods and emergency revocation"
+        sources: [source, oneleet]
+      - text: "Implemented observability end-to-end: Prometheus metrics across agent connections, VM states, and tunnel operations; distributed tracing; PagerDuty/Slack alerting with severity-based routing; TimescaleDB-backed job step tracking for diagnosability; treated reliability as a product feature with SLOs and incident runbooks"
+        sources: [source, oneleet, exnaton]
+      - text: "Built queue-based job orchestration with Asynq (distributed job queues) and a distributed state machine designed for diagnosability and recovery"
+        sources: [source, oneleet]
+      - text: "Architected integration patterns and custom tooling in Python and JavaScript enabling external systems and AI agents to interoperate via public APIs, webhooks, and migration scripts"
+        sources: [optimizely]
+      - text: "Designed the application platform that hosts and runs AI agents at scale, including data-access and knowledge-retrieval patterns (vector stores, embeddings, prompt structuring) — grounded in daily AI-native development with Claude Code, Codex, and agent frameworks"
+        sources: [optimizely]
+      - text: "AI-native development using Claude Code and agent-based workflows for rapid feature delivery; led end-to-end ownership of services including authentication, rate limiting, and the API gateway for agent-to-platform communication"
+        sources: [zipdev]
+      - text: "Architected Rails background job processing with Sidekiq for async workflows handling VM provisioning and certificate generation; built Rails-based billing and subscription management with payment provider integration; developed a Rails + ActionCable real-time monitoring dashboard with Stimulus JS and Tailwind CSS"
+        sources: [zipdev]
+    projects:
+      - name: Multi-cloud substrate
+        highlights:
+          - {text: "Unified provider abstraction across AWS, GCP, Azure, and bare-metal/VPS with encrypted credential management and per-tenant quota", sources: [source, oneleet, optimizely, exnaton]}
+        sources: [source, oneleet, optimizely, exnaton]
+      - name: Isolated runtime environments for agents
+        highlights:
+          - {text: "Hard-isolated environments on bare-metal abstracting k3s/k0s/MicroK8s, handling 30+ concurrency edge cases", sources: [source, exnaton]}
+        sources: [source, exnaton]
+      - name: Cross-cloud mesh networking
+        highlights:
+          - {text: "Provider-agnostic overlay network with Envoy proxy for unified routing across heterogeneous clouds", sources: [source, exnaton]}
+        sources: [source, exnaton]
+      - name: Agent-based remote management (reverse tunnel)
+        highlights:
+          - {text: "Zero-inbound-port reverse-tunnel agent with heartbeat, capability discovery, and token-exchange registration", sources: [source]}
+        sources: [source]
+      - name: Multi-tenant security and zero-knowledge vault
+        highlights:
+          - {text: "Envelope encryption, Argon2id vault, HMAC nonce-replay protection, SSRF protection, API-key rotation and revocation", sources: [source, oneleet]}
+        sources: [source, oneleet]
+    stack: [Golang (Fiber/Echo/Gin), Ruby on Rails 7, Python, JavaScript, TypeScript, React, Next.js, REST APIs, PostgreSQL, TimescaleDB, Redis, Asynq, Sidekiq, ActionCable, Stimulus JS, Tailwind CSS, k3s, k0s, MicroK8s, Docker, Helm, Terraform, AWS SDK, GCP SDK, Azure SDK, Envoy Proxy, Cloudflare Tunnels, Overlay Networking, Prometheus, Distributed Tracing, Claude Code, Codex]
+    sources: [source, oneleet, optimizely, exnaton, zipdev]
+
+  - company: Kahf
+    roles:
+      - {title: Infrastructure Lead / Platform Engineer, sources: [source, oneleet, optimizely]}
+      - {title: Infrastructure Lead & DevOps Engineer, sources: [exnaton]}
+      - {title: Platform Engineer, sources: [zipdev]}
+    location: Turkey (Remote)
+    start_date: 2024-08
+    end_date: 2026-04
+    employment_type: full-time
+    description: >-
+      Operated a multi-cloud platform hosting production services across multiple product lines, with full ownership of infrastructure, observability, DevSecOps, and developer experience.
+    highlights:
+      - text: "Architected and operated a multi-cloud platform on Hetzner bare-metal and OVHcloud hosting 10+ production services across 3 distinct product lines, reducing infrastructure cost 60%+ compared to Azure AKS while maintaining 99.9%+ platform availability"
+        sources: [source, oneleet, optimizely, exnaton, zipdev]
+      - text: "Established a GitOps-driven delivery workflow using self-hosted GitLab CI/CD and Helm, with a private container registry, enabling fully automated, auditable deployments across production, staging, and development"
+        sources: [source, exnaton, zipdev]
+      - text: "Ran PostgreSQL in production via CloudNativePG with WAL archiving and point-in-time recovery; automated backup and disaster recovery with restore verification; tuned queries and indexing, reducing average response times by 40%"
+        sources: [source, oneleet, zipdev]
+      - text: "Stood up the full observability stack (Prometheus, Grafana, Loki, Tempo for distributed tracing, Alertmanager) with SLO dashboards, correlation IDs for request tracing, and incident runbooks/post-mortems that standardized triage and cut MTTR"
+        sources: [source, oneleet, exnaton, zipdev]
+      - text: "Acted as primary on-call engineer, authoring incident response runbooks and post-mortem templates that reduced mean time to recovery by standardizing triage procedures across all production services"
+        sources: [source, optimizely]
+      - text: "Applied DevSecOps controls: Kyverno policy-as-code (pod security standards, resource validation), Zitadel for SSO/OIDC, HashiCorp Vault and k8s-replicator for secret management, RBAC, and network policies"
+        sources: [source, oneleet, exnaton]
+      - text: "Built 100+ Terraform and Ansible modules and 30+ Bash and Python automation scripts covering provisioning, data migration, backup/restore, and health monitoring"
+        sources: [source, optimizely, exnaton]
+      - text: "Implemented multiple Kubernetes operators and platform tooling in Golang to automate repetitive operations and improve developer experience for the engineering team"
+        sources: [source, oneleet]
+    stack: [Golang, Ruby on Rails 6-7, Python, Bash, PostgreSQL (CloudNativePG), Redis, Sidekiq, Terraform, Ansible, Helm, GitOps, GitLab CI/CD, MicroK8s, Kubernetes, Traefik, Cert-Manager, Prometheus, Grafana, Loki, Tempo, CloudNativePG, MariaDB Operator, MongoDB, OpenEBS, Kyverno, Zitadel, KEDA, Docker]
+    sources: [source, oneleet, optimizely, exnaton, zipdev]
+
+  - company: BitByte Technology
+    roles:
+      - {title: Software Architect, sources: [source]}
+      - {title: Software Architect (Part-time), sources: [optimizely]}
+      - {title: Software Architect, sources: [zipdev]}
+    location: Dhaka, Bangladesh (Hybrid, concurrent)
+    start_date: 2024-01
+    end_date: 2025-12
+    employment_type: part-time
+    description: >-
+      Concurrent part-time architect role for Bitcommerce, a SaaS e-commerce builder platform (like Shopify) helping merchants launch storefronts quickly.
+    highlights:
+      - text: "Led DevOps automation and backend development for Bitcommerce, a leading e-commerce builder platform (like Shopify) focused on helping entrepreneurs get their e-commerce platform up and running quickly"
+        sources: [source]
+      - text: "Handled everything from the SaaS platform to the SaaS admin, including inventory management, complex business setup, payment system aggregation, and continuous monitoring"
+        sources: [source]
+      - text: "Architected Bitcommerce using Ruby on Rails with the Spree extension, designing multi-tenant architecture (apartment gem) for per-shop data isolation while maintaining shared core platform code"
+        sources: [zipdev]
+      - text: "Implemented complex e-commerce features including inventory management, product variants, dynamic pricing, and multi-payment gateway integration (Stripe, PayPal)"
+        sources: [zipdev]
+      - text: "Built Rails API endpoints consumed by a TypeScript + Next.js frontend following the JSON:API spec with proper serialization, versioning, and documentation; frontend used Tailwind CSS and Stimulus JS"
+        sources: [zipdev]
+      - text: "Developed a recommendation engine using background jobs processing user behavior data with ML-assisted product suggestions; provided highly customizable options to shop owners and end users"
+        sources: [source, zipdev]
+      - text: "Led technical discovery and solution design for integrations with payment gateways, shipping providers, and third-party marketing tools via REST APIs"
+        sources: [optimizely]
+      - text: "Designed data-migration strategies for merchants onboarding onto the platform, handling product catalogs, customer data, and order history across JSON, CSV, and XLSX formats; facilitated merchant enablement sessions"
+        sources: [optimizely]
+    stack: [Ruby on Rails 7, Spree Commerce, Next.js, JavaScript, TypeScript, Python, REST APIs, JSON:API, JSON, CSV, XLSX, PostgreSQL, Redis, Sidekiq, RSpec, Stimulus JS, Tailwind CSS, AWS, GCP, Hetzner, Contabo]
+    sources: [source, optimizely, zipdev]
+
+  - company: SmartFinancial
+    roles:
+      - {title: Full Stack Engineer, sources: [source, oneleet, optimizely, exnaton]}
+      - {title: Senior Backend Engineer, sources: [zipdev]}
+    location: United States (Remote)
+    start_date: 2023-01
+    end_date: 2024-12
+    employment_type: full-time
+    description: >-
+      Backend and full-stack work for a leading US digital insurance marketplace — Rails monolith features, third-party integrations, data pipelines, and DevSecOps.
+    highlights:
+      - text: "Developed and maintained Ruby on Rails backend services with comprehensive RSpec test coverage (90%+) for a leading US digital insurance marketplace"
+        sources: [source, oneleet, optimizely, exnaton, zipdev]
+      - text: "Built reliable third-party API integrations (Slack, Facebook, Close CRM) with data synchronization, retry logic, and error handling across the core platform"
+        sources: [source, oneleet, optimizely]
+      - text: "Built complex business logic using Rails service objects for an insurance quote comparison engine with real-time pricing API integrations"
+        sources: [zipdev]
+      - text: "Implemented Rails background job processing with Sidekiq for async workflows handling 100K+ daily jobs"
+        sources: [zipdev]
+      - text: "Optimized PostgreSQL queries, implemented proper indexing and connection pooling, and reduced database response times by 40% through query optimization"
+        sources: [zipdev]
+      - text: "Processed and transformed large datasets (JSON, CSV) through ETL pipelines for data migration, reporting, and synchronization"
+        sources: [source, oneleet, optimizely]
+      - text: "Redesigned the CI/CD pipeline using Drone CI, Packer, and CodeBuild to produce immutable container images, cutting release cycle time from 40+ minutes to under 10 and enabling multiple deployments per day"
+        sources: [source, oneleet, optimizely, exnaton]
+      - text: "Provisioned and managed AWS infrastructure (ECS Fargate, RDS Aurora, CloudFront, ALB, WAF, Redshift, ElastiCache) using Terraform across production, staging, and development"
+        sources: [source, exnaton]
+      - text: "Applied DevSecOps controls: IAM least-privilege policies, KMS encryption at rest, AWS Secrets Manager, WAF rule sets, and SSM Parameter Store for centralized configuration"
+        sources: [source, oneleet, exnaton]
+      - text: "Worked with TypeScript in React components and integrated Stimulus JS for lightweight frontend interactivity"
+        sources: [zipdev]
+    stack: [Ruby on Rails 7, RSpec, Sidekiq, JavaScript, TypeScript, Python, React.js, Stimulus JS, REST APIs, JSON, CSV, MySQL, PostgreSQL, Docker, AWS (ECS/Fargate, RDS Aurora, CloudFront, ALB, WAF, Lambda, S3, Redshift, ElastiCache, KMS, ACM, SSM), Terraform, Drone CI, Packer, GCP]
+    sources: [source, oneleet, optimizely, exnaton, zipdev]
+
+  - company: Berlingske Media (24Syv)
+    roles:
+      - {title: DevOps & Lead Backend Engineer, sources: [source, oneleet, optimizely, exnaton]}
+      - {title: Lead Backend Engineer, sources: [zipdev]}
+    location: Denmark (Remote)
+    start_date: 2022-01
+    end_date: 2024-12
+    employment_type: part-time
+    description: >-
+      Real-time Danish news and podcast platform — backend development, event-driven microservices, ML-assisted audio processing, and third-party data integrations.
+    highlights:
+      - text: "Led DevOps automation and backend development for 24Syv, a real-time Danish news and podcast platform, designing Kubernetes-based microservices on AWS with Kafka for event streaming and Elasticsearch for full-text content search"
+        sources: [source, oneleet, optimizely, exnaton, zipdev]
+      - text: "Developed Rails API serving real-time content with WebSocket integration via ActionCable for live news updates and podcast streaming"
+        sources: [zipdev]
+      - text: "Built a podcast recommendation engine with ML-assisted audio processing pipelines using Python and Google Speech-to-Text, enabling automated topic clustering and personalised podcast recommendations based on spoken audio content"
+        sources: [source, oneleet, optimizely, exnaton, zipdev]
+      - text: "Implemented Elasticsearch integration via Rails for full-text content search with typo tolerance, faceting, and real-time indexing"
+        sources: [zipdev]
+      - text: "Developed Rails background processing for RSS feed consumption, social media API integration (Twitter, Facebook), and analytics data processing"
+        sources: [zipdev]
+      - text: "Consumed real-time data from Superfeedr RSS feeds, Twitter and Facebook APIs, and Mixpanel for user analytics; monitored platform health via Grafana and managed Getstream-powered activity feeds"
+        sources: [source]
+      - text: "Designed the database schema for high-write workloads with proper indexing, partitioning, and read replica configuration"
+        sources: [zipdev]
+      - text: "Developed 20+ Python automation scripts and ML-assisted audio processing pipelines"
+        sources: [source, optimizely]
+    stack: [Ruby on Rails 6, Golang, Python, Java Spring Boot, Node.js, Kubernetes, Kafka, Elasticsearch, PostgreSQL, MongoDB, MySQL, Redis, RSpec, Grafana, Getstream, Google Speech-to-Text, AWS (ECS, ECR, S3, CloudFront, ElastiCache), Drone CI]
+    sources: [source, oneleet, optimizely, exnaton, zipdev]
+
+  - company: Seedrs (acquired by Republic)
+    roles:
+      - {title: Solution Architect, sources: [source, exnaton]}
+      - {title: Solutions Architect (Contract), sources: [oneleet, optimizely]}
+      - {title: Solution Architect, sources: [zipdev]}
+    location: United Kingdom (Remote)
+    start_date: 2022-01
+    end_date: 2023-12
+    employment_type: contract
+    description: >-
+      Solution architecture for the UK's leading equity-crowdfunding platform ($2.3B+ raised), during its transition following the Republic acquisition.
+    highlights:
+      - text: "Customer-facing Solutions Architect for the UK's leading equity-crowdfunding platform ($2.3B+ raised), leading technical engagements for multiple enterprise integrations during the Republic acquisition transition"
+        sources: [source, oneleet, optimizely, exnaton, zipdev]
+      - text: "Translated business integration requirements into complete solution designs and delivered integration architectures with dedicated engineering support"
+        sources: [oneleet, optimizely]
+      - text: "Led discovery and execution of data-migration projects from external platforms: gathered requirements, analyzed source export capabilities, and wrote custom migration scripts for asset and metadata transfer"
+        sources: [source, oneleet, optimizely]
+      - text: "Defined a platform scalability roadmap including database partitioning, caching strategies, and service boundary planning; introduced Datadog-based observability (APM, custom metrics) for the Rails platform"
+        sources: [source, oneleet, optimizely, zipdev]
+      - text: "Championed Rails security enhancements for financial services including audit logging, PCI compliance, and sensitive data protection"
+        sources: [zipdev]
+      - text: "Took end-to-end ownership of architectural decisions from design through implementation, considering long-term maintenance; advocated customer needs back to Product and Engineering"
+        sources: [oneleet, optimizely, zipdev]
+    stack: [Ruby on Rails 6, PostgreSQL, MySQL, Python, REST APIs, JSON, CSV, AWS ECS, Firebase, Docker, Datadog, Looker, React.js]
+    sources: [source, oneleet, optimizely, exnaton, zipdev]
+
+  - company: MonstarLab Bangladesh
+    roles:
+      - {title: Backend Lead / Software Architect, sources: [source, oneleet, optimizely, exnaton]}
+      - {title: Backend Lead / Software Architect, sources: [zipdev]}
+    location: Dhaka, Bangladesh
+    start_date: 2015-01
+    end_date: 2022-12
+    employment_type: full-time
+    description: >-
+      Progressed from Technical Lead to Software Architect over 7 years; contributed to 20+ client projects across 5+ industry verticals while managing a cross-functional team of 15+ engineers across backend, DevOps, and QA in an Agile/Scrum environment.
+    highlights:
+      - text: "Progressed from Technical Lead to Software Architect over 7 years; delivered 20+ client projects across 5+ industries while managing a cross-functional team of 15+ engineers across backend, DevOps, and QA"
+        sources: [source, oneleet, optimizely, exnaton, zipdev]
+      - text: "Customer-facing architect for client engagements: technical discovery, solution design, and end-to-end delivery, including migrations from legacy systems to modern platforms"
+        sources: [source, oneleet, optimizely]
+      - text: "Established Rails development standards including RSpec testing, CI/CD pipelines, code review standards, and performance optimization; mentored junior developers on best practices and system design"
+        sources: [zipdev]
+      - text: "Engineered core driver-matching, route optimisation, and dynamic pricing algorithms in Golang and Java Spring Boot for a high-traffic ride-sharing platform, deployed on AWS (EC2, RDS, Redis)"
+        sources: [source, exnaton]
+      - text: "Delivered an interactive runway-to-cart fashion video commerce platform in Golang and AngularJS, leveraging FFmpeg and AWS Elastic Transcoder to enable real-time product purchases directly from fashion runway videos"
+        sources: [source]
+      - text: "Designed a Spotify-like Danish podcast service using Ruby on Rails, Golang, Kubernetes, Kafka, Elasticsearch, and MongoDB, with ML-driven recommendations and Google Speech-to-Text for audio content indexing"
+        sources: [source]
+      - text: "Designed PostgreSQL and MySQL schemas and optimized queries for high-volume transactional and analytics workloads across multiple client platforms"
+        sources: [source, oneleet]
+      - text: "Built queue-based processing with RabbitMQ and Kafka for asynchronous job handling across microservices"
+        sources: [source, oneleet]
+      - text: "Built custom integration tools in JavaScript and Python interfacing with external systems via REST APIs and third-party services; delivered CMS and marketing-technology solutions"
+        sources: [source, oneleet, optimizely]
+      - text: "Facilitated technical workshops and knowledge-transfer sessions so client teams could manage and extend their solutions independently"
+        sources: [source, oneleet, optimizely]
+    projects:
+      - name: Ride-Sharing Platform
+        highlights:
+          - {text: "Core driver-matching, route optimisation, and dynamic pricing algorithms in Golang and Java Spring Boot for a high-traffic Uber competitor, deployed on AWS (EC2, RDS, Redis)", sources: [source, exnaton]}
+        stack: [Golang, Java Spring Boot, AWS EC2, RDS, Redis]
+        sources: [source, exnaton]
+      - name: Fashion Video Commerce
+        highlights:
+          - {text: "Interactive runway-to-cart platform in Golang and AngularJS, leveraging FFmpeg and AWS Elastic Transcoder to enable real-time product purchases directly from fashion runway videos", sources: [source]}
+        stack: [Golang, AngularJS, FFmpeg, AWS Elastic Transcoder]
+        sources: [source]
+      - name: Podcast Platform (24Syv origin)
+        highlights:
+          - {text: "Spotify-like Danish podcast service in Ruby on Rails, Golang, Kubernetes, Kafka, Elasticsearch, and MongoDB, with ML-driven recommendations and Google Speech-to-Text audio indexing", sources: [source]}
+        stack: [Ruby on Rails, Golang, Kubernetes, Kafka, Elasticsearch, MongoDB, Google Speech-to-Text]
+        sources: [source]
+    stack: [Ruby on Rails (4/5/6), Golang, Java Spring Boot, Swift (Vapor), AngularJS, JavaScript, Python, REST APIs, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Kafka, Sidekiq, Docker, Kubernetes, AWS (EC2, S3, Lambda, SES, SNS, Elastic Transcoder, API Gateway, ELB), Jenkins, CircleCI, Nginx, FFmpeg]
+    sources: [source, oneleet, optimizely, exnaton, zipdev]
+
+  - company: CodersTrust Bangladesh
+    roles:
+      - {title: Full Stack Engineer, sources: [source]}
+      - {title: Full Stack Developer, sources: [zipdev]}
+      - {title: Full Stack Engineer, sources: [optimizely]}
+    location: Dhaka, Bangladesh
+    start_date: 2014-01
+    end_date: 2015-12
+    employment_type: full-time
+    description: >-
+      Backend development for a multi-tenant EdTech platform serving students, mentors, administrators, and investors.
+    highlights:
+      - text: "Led backend development for a multi-tenant EdTech platform serving students, mentors, administrators, and investors; built with Ruby on Rails 4"
+        sources: [source, optimizely, zipdev]
+      - text: "Enabled real-time video mentoring via the Google Hangouts API with Rails backend WebSocket coordination"
+        sources: [source, optimizely, zipdev]
+      - text: "Built interactive D3.js analytics dashboards with Rails backend data aggregation, supporting on-demand PDF and Excel export"
+        sources: [source, optimizely]
+      - text: "Implemented multi-tenant Rails architecture with the apartment gem for per-organization data isolation and shared platform features"
+        sources: [zipdev]
+      - text: "Integrated payment systems (Stripe, PayPal) and communication services (Twilio) through Rails service objects"
+        sources: [source, zipdev]
+      - text: "Deployed and managed Rails applications on Heroku with proper pipeline configuration and add-on integrations"
+        sources: [zipdev]
+    stack: [Ruby on Rails 4, PHP, PostgreSQL, AngularJS, jQuery, D3.js, Heroku, AWS (EC2, S3, Lambda, API Gateway, Elastic Transcoder), FFmpeg, Stripe, PayPal, Twilio]
+    sources: [source, optimizely, zipdev]
+
+  - company: Epistocracy
+    roles:
+      - {title: Full Stack Engineer, sources: [source]}
+      - {title: Co-founder & Backend Developer, sources: [zipdev]}
+      - {title: Full Stack Engineer, sources: [optimizely]}
+    location: USA (Remote)
+    start_date: 2013-01
+    end_date: 2016-12
+    employment_type: co-founder
+    description: >-
+      Co-founded and built a political social network from the ground up, leading a distributed team across the USA, Ukraine, and Israel.
+    highlights:
+      - text: "Co-founded and built a political social network from the ground up, leading a distributed team across the USA, Ukraine, and Israel"
+        sources: [source, optimizely, zipdev]
+      - text: "Delivered real-time features using WebSocket and Server-Sent Events (SSE) with a Neo4j graph database for relationship-driven content discovery"
+        sources: [source, optimizely, zipdev]
+      - text: "Implemented Rails-based graph database integration for social connections, content recommendations, and political interest mapping"
+        sources: [zipdev]
+      - text: "Designed a multi-language Rails application with i18n support for a global political discourse platform"
+        sources: [zipdev]
+      - text: "Deployed on Heroku with proper scaling configuration, database backups, and monitoring"
+        sources: [zipdev]
+    stack: [Ruby on Rails 4, PostgreSQL, Neo4j, MySQL, MongoDB, AngularJS, RSpec, Heroku, DigitalOcean]
+    sources: [source, optimizely, zipdev]
+
+  - company: Gosaily
+    roles:
+      - {title: Full Stack Engineer, sources: [source]}
+      - {title: Full Stack Developer, sources: [zipdev]}
+      - {title: Full Stack Engineer, sources: [optimizely]}
+    location: Italy (Remote)
+    start_date: 2013-01
+    end_date: 2015-12
+    employment_type: full-time
+    description: >-
+      Boat-trip booking platform serving Italian coastal communities.
+    highlights:
+      - text: "Developed a boat-trip booking platform serving Italian coastal communities using Ruby on Rails"
+        sources: [source, optimizely, zipdev]
+      - text: "Implemented complex Google Maps marker clustering and dynamic event-search overlays via Rails geospatial queries"
+        sources: [source, optimizely, zipdev]
+      - text: "Built a booking management system with availability calendars, pricing rules, and payment processing"
+        sources: [zipdev]
+    stack: [Ruby on Rails 4, MySQL, jQuery, Google Maps API, PayPal, DigitalOcean]
+    sources: [source, optimizely, zipdev]
+
+  - company: ICONSBD
+    roles:
+      - {title: Junior Software Engineer, sources: [source]}
+      - {title: Junior Backend Developer, sources: [zipdev]}
+      - {title: Junior Software Engineer, sources: [optimizely]}
+    location: Dhaka, Bangladesh
+    start_date: 2012-01
+    end_date: 2013-12
+    employment_type: full-time
+    description: >-
+      Delivered multiple client projects in Ruby on Rails within an Agile team.
+    highlights:
+      - text: "Delivered multiple client projects in Ruby on Rails 3 within an Agile team environment"
+        sources: [source, optimizely, zipdev]
+      - text: "Contributed to Rails application development following MVC patterns and RESTful conventions"
+        sources: [zipdev]
+      - text: "Gained foundational experience in Rails development, database modeling with MySQL, and deployment with Nginx"
+        sources: [zipdev]
+    stack: [Ruby on Rails 3, MySQL, Nginx, Git]
+    sources: [source, optimizely, zipdev]
+
+  - company: Telnet Communications
+    roles:
+      - {title: Junior Support Engineer, sources: [source, optimizely, zipdev]}
+    location: Dhaka, Bangladesh
+    start_date: 2011-01
+    end_date: 2012-12
+    employment_type: full-time
+    description: >-
+      NOC monitoring and enterprise network deployment across banking networks.
+    highlights:
+      - text: "Performed NOC monitoring, configured Nagios and BIND DNS servers, and deployed Linux servers and Cisco networking equipment across enterprise banking networks"
+        sources: [source, optimizely]
+      - text: "Supported Linux servers and networking equipment while beginning Rails self-study and open-source contributions"
+        sources: [zipdev]
+    stack: [Linux, Networking, Nagios, BIND DNS, Cisco]
+    sources: [source, optimizely, zipdev]
+
+education:
+  - institution: Noakhali Science and Technology University
+    area: Computer Science and Telecommunication Engineering
+    degree: BSc
+    location: Bangladesh
+    start_date: 2007
+    end_date: 2012
+    highlights:
+      - "CGPA: 3.24 / 4.00"

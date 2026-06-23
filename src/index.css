@@ -1,0 +1,163 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   THEME TOKENS — default: cinematic dark. `.light` = editorial.
+   ============================================================ */
+:root {
+  --c-canvas: #0c0e12;
+  --c-panel: #12151b;
+  --c-panel-2: #161a21;
+  --c-edge: #23272f;
+  --c-ink: #e6e9ef;
+  --c-mute: #8b93a1;
+  --c-faint: #5a606c;
+  --c-accent: #ffb454;
+  --c-accent-soft: rgba(255, 180, 84, 0.14);
+  --c-positive: #7ee787;
+  --c-glow: rgba(255, 180, 84, 0.22);
+  --grid-line: rgba(255, 255, 255, 0.035);
+  --grid-bold: rgba(255, 255, 255, 0.06);
+  color-scheme: dark;
+}
+
+.light {
+  --c-canvas: #faf8f3;
+  --c-panel: #ffffff;
+  --c-panel-2: #f4f1ea;
+  --c-edge: #e2ddd2;
+  --c-ink: #1a1a17;
+  --c-mute: #6b665c;
+  --c-faint: #a8a298;
+  --c-accent: #c2680a;
+  --c-accent-soft: rgba(194, 104, 10, 0.1);
+  --c-positive: #2f7d32;
+  --c-glow: rgba(194, 104, 10, 0.16);
+  --grid-line: rgba(0, 0, 0, 0.04);
+  --grid-bold: rgba(0, 0, 0, 0.07);
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    border-color: var(--c-edge);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--c-canvas);
+    color: var(--c-ink);
+    font-family: 'Inter Variable', Inter, system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--c-accent);
+    color: var(--c-canvas);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  /* Monochrome tech icons inherit currentColor regardless of brand fill */
+  .techicon svg,
+  .techicon path {
+    fill: currentColor !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .panel {
+    background-color: var(--c-panel);
+    border: 1px solid var(--c-edge);
+  }
+
+  .hairline {
+    border: 1px solid var(--c-edge);
+  }
+
+  /* Monospace micro-label */
+  .label {
+    font-family: 'JetBrains Mono Variable', monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--c-mute);
+  }
+
+  .grid-texture {
+    background-image:
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to right, var(--grid-bold) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-bold) 1px, transparent 1px);
+    background-size: 32px 32px, 32px 32px, 160px 160px, 160px 160px;
+    background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+  }
+
+  .glow-orb {
+    background: radial-gradient(circle at center, var(--c-glow), transparent 65%);
+    filter: blur(8px);
+  }
+
+  .link-underline {
+    background-image: linear-gradient(var(--c-accent), var(--c-accent));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-edge) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--c-edge);
+    border-radius: 999px;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
