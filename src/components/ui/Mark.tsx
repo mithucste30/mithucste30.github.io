@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { companyLogoUrl, techIconRaw } from '../../lib/media';
+import { companyLogoRaw, companyLogoUrl, projectImageUrl, techIconRaw } from '../../lib/media';
 import { initials } from '../../lib/data';
 
 function hashStr(s: string): number {
@@ -42,7 +42,18 @@ function Emblem({ name, size = 44 }: { name: string; size?: number }) {
 }
 
 export function CompanyMark({ name, size = 44 }: { name: string; size?: number }) {
-  const url = companyLogoUrl(name);
+  const raw = companyLogoRaw(name);
+  const url = companyLogoRaw(name) ? null : companyLogoUrl(name);
+  if (raw) {
+    return (
+      <span
+        className="marksvg relative inline-flex shrink-0 items-center justify-center rounded-lg border border-edge bg-panel-2 text-accent transition-colors duration-300 hover:border-accent/50"
+        style={{ width: size, height: size, padding: size * 0.2 }}
+        dangerouslySetInnerHTML={{ __html: raw }}
+        aria-hidden
+      />
+    );
+  }
   if (url) {
     return (
       <img
@@ -106,8 +117,22 @@ export function ProjectArt({
   company: string;
   className?: string;
 }) {
+  const url = projectImageUrl(name);
   const kind = useMemo(() => classify(name, company), [name, company]);
   const h = hashStr(name);
+  if (url) {
+    return (
+      <div className={`relative overflow-hidden rounded-lg border border-edge bg-panel-2 ${className}`}>
+        <img
+          src={url}
+          alt={`${name} — abstract visual`}
+          loading="lazy"
+          className="h-full w-full object-cover opacity-90 transition-transform duration-700 ease-out group-hover:scale-[1.04] group-hover:opacity-100"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-canvas/40 via-transparent to-transparent" />
+      </div>
+    );
+  }
   return (
     <div className={`relative overflow-hidden rounded-lg border border-edge bg-panel-2 ${className}`}>
       <svg viewBox="0 0 320 180" className="h-full w-full text-accent" preserveAspectRatio="xMidYMid slice">

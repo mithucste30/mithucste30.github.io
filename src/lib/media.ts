@@ -12,6 +12,15 @@ const iconsRaw = import.meta.glob('../media/icons/*.svg', {
   import: 'default',
 }) as Record<string, string>;
 
+// Inline SVG brand marks — raw markup so they theme with currentColor and stay
+// crisp at any size. Falls back to a raster <img> if a non-SVG file is dropped,
+// then to the generated <Emblem> in the React layer.
+const companiesRaw = import.meta.glob('../media/companies/*.svg', {
+  eager: true,
+  query: '?raw',
+  import: 'default',
+}) as Record<string, string>;
+
 const companies = import.meta.glob(
   '../media/companies/*',
   { eager: true, query: '?url', import: 'default' },
@@ -89,6 +98,11 @@ export function techIconRaw(item: string): string | null {
 
 export function companyLogoUrl(name: string): string | null {
   return bySlug(companies, companySlug(name));
+}
+
+/** Inline SVG brand mark markup for a company, or null. */
+export function companyLogoRaw(name: string): string | null {
+  return bySlugRaw(companiesRaw, companySlug(name));
 }
 
 export function projectImageUrl(name: string): string | null {
