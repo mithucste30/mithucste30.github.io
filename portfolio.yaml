@@ -5,7 +5,7 @@
 # Every highlight / skill / summary is tagged with its source CV(s).
 # Consumed downstream by the frontend builder skill (FE not generated here).
 version: 1
-last_updated: 2026-06-26
+last_updated: 2026-08-03
 
 source_key:
   source: "source/cv_original.md"
@@ -17,6 +17,7 @@ source_key:
   oscilar: "companies/oscilar/sr_staff_backend_engineer/cv.md"
   greenbone: "companies/greenbone/senior_golang_software_engineer/cv.md"
   opensc: "companies/opensc/software_engineer_infrastructure_devops/cv.md"
+  fieldnation: "companies/fieldnation/principal_software_engineer_architect/cv.md"
 
 profile:
   name: MD MAZHARUL ISLAM
@@ -24,7 +25,7 @@ profile:
   location: Dhaka, Bangladesh
   email: mithu.cste.30@gmail.com
   phone: "+8801911255016"
-  website: https://github.com/mithucste30
+  website: https://mithucste30.github.io
   social:
     github: mithucste30
     linkedin: mithucste30
@@ -34,13 +35,13 @@ profile:
         Platform Engineer and Software Architect with 12+ years of experience building infrastructure platforms from bare metal to cloud. Specialises in designing multi-cloud compute substrates, multi-tenant isolation systems, and application platforms for autonomous agents. Production-grade expertise in Go and Ruby on Rails, with deep hands-on experience provisioning application platforms on bare-metal infrastructure, building WebSocket-based agent systems, and multi-cloud VM provisioning across AWS, GCP, Azure, Hetzner, and OVHcloud. AI-native engineer — daily user of Claude Code, Codex, and agent-based development workflows.
     - source: oneleet
       text: >-
-        Backend engineer with 12+ years building production services, including 6+ years designing and shipping Go backends and REST APIs. Most recently shipped ~200 REST API endpoints across 16 domains in Go (Fiber) on PostgreSQL, TimescaleDB, and Redis as a founding engineer. Strong on PostgreSQL schema design and query optimization, third-party API integrations, observability (metrics + distributed tracing), queue-based job orchestration, and security best practices — with direct DevSecOps experience well-suited to a security and compliance platform.
+        Backend engineer with 12+ years building production services, including 6+ years designing and shipping Go backends and REST APIs. Most recently shipped ~200 REST API endpoints across 16 domains in Go (Fiber) on PostgreSQL, TimescaleDB, and Redis as a senior platform engineer. Strong on PostgreSQL schema design and query optimization, third-party API integrations, observability (metrics + distributed tracing), queue-based job orchestration, and security best practices — with direct DevSecOps experience well-suited to a security and compliance platform.
     - source: exnaton
       text: >-
         Fullstack Engineer and DevOps Specialist with 12+ years of experience building scalable cloud-native applications and operating production infrastructure. Expert in microservices architecture, event-driven systems, and Kubernetes orchestration with deep hands-on experience in Next.js frontend development, polyglot backends (Go, Ruby, Python, Node.js), and AWS infrastructure. Proven track record delivering 60%+ infrastructure cost reductions and maintaining 99.9%+ availability.
     - source: optimizely
       text: >-
-        Software and platform architect with 12+ years progressing from full-stack engineer to solutions and software architect. Dedicated Solutions Architect experience at Seedrs (UK, $2.3B+ platform) leading customer integrations and data migrations, plus founding-engineer architecture of an AI-agent platform at BareMetalCloud. Customer-facing discovery, migration leadership, and technical enablement across MarTech, CMS, and AI platforms. Career combines sequential full-time roles with concurrent part-time and contract engagements.
+        Software and platform architect with 12+ years progressing from full-stack engineer to solutions and software architect. Dedicated Solutions Architect experience at Seedrs (UK, $2.3B+ platform) leading customer integrations and data migrations, plus platform architecture of an AI-agent platform at BareMetalCloud. Customer-facing discovery, migration leadership, and technical enablement across MarTech, CMS, and AI platforms. Career combines sequential full-time roles with concurrent part-time and contract engagements.
     - source: zipdev
       text: >-
         Senior Full-Stack Engineer and Technical Leader with 12+ years experience, including 7+ years deep expertise in Ruby on Rails and PostgreSQL. Expert in end-to-end systems ownership, architectural guidance, and driving complex initiatives in fast-paced environments. AI-native developer reshaping the SDLC using Claude Code, agent-based workflows, and AI-driven development. Proven track record leading cross-functional teams, mentoring engineers, and delivering production Rails monoliths at scale.
@@ -49,13 +50,16 @@ profile:
         Senior Solutions Consultant and Software Architect with 12+ years of experience in customer-facing technical roles — solution architecture, consulting, technical onboarding, and data migration. Proven track record leading analytics implementations and data-warehousing initiatives with hands-on expertise in SQL, Redshift, and Looker. Adept at translating complex technical concepts for non-technical stakeholders (marketing teams, analysts, client executives) and driving product adoption through enablement workshops, documentation, and training. Combines deep engineering credibility (Go, Ruby on Rails, Python, JavaScript) with consultative client skills honed across commerce, fintech, media, and MarTech verticals.
     - source: oscilar
       text: >-
-        Backend engineer with 12+ years building production services in Java (Spring Boot) and Go, with deep experience in low-latency, distributed systems and real-time streaming on AWS. Designed and shipped core driver-matching, route optimization, and dynamic-pricing services in Java Spring Boot for a high-traffic ride-sharing platform, and built Kafka-driven event-streaming backends for real-time media platforms. Most recently shipped ~200 REST API endpoints as a founding engineer with end-to-end observability, envelope encryption, and security best practices — directly transferable to a real-time fraud and risk decisioning platform.
+        Backend engineer with 12+ years building production services in Java (Spring Boot) and Go, with deep experience in low-latency, distributed systems and real-time streaming on AWS. Designed and shipped core driver-matching, route optimization, and dynamic-pricing services in Java Spring Boot for a high-traffic ride-sharing platform, and built Kafka-driven event-streaming backends for real-time media platforms. Most recently shipped ~200 REST API endpoints as a senior platform engineer with end-to-end observability, envelope encryption, and security best practices — directly transferable to a real-time fraud and risk decisioning platform.
     - source: greenbone
       text: >-
-        Golang software engineer with 12+ years building production backends and end-to-end products, with Go as a primary language across the Fiber, Echo, and Gin ecosystem. Most recently shipped ~200 REST API endpoints across 16 domains in Go (Fiber) with a React/TypeScript frontend on PostgreSQL, TimescaleDB, and Redis as a founding engineer. Strong on testable, well-reviewed code (table-driven tests, integration/E2E suites, CI gates), PostgreSQL schema design, Dockerized services, and OpenSearch — a direct fit for an open-source Go + PostgreSQL + Docker + OpenSearch stack.
+        Golang software engineer with 12+ years building production backends and end-to-end products, with Go as a primary language across the Fiber, Echo, and Gin ecosystem. Most recently shipped ~200 REST API endpoints across 16 domains in Go (Fiber) with a React/TypeScript frontend on PostgreSQL, TimescaleDB, and Redis as a senior platform engineer. Strong on testable, well-reviewed code (table-driven tests, integration/E2E suites, CI gates), PostgreSQL schema design, Dockerized services, and OpenSearch — a direct fit for an open-source Go + PostgreSQL + Docker + OpenSearch stack.
     - source: opensc
       text: >-
         Infrastructure / DevOps Engineer with 12+ years building and operating cloud-native platforms on AWS. Deep production experience with the AWS services this role needs (EKS, EC2, RDS Aurora, SQS/SNS, Lambda, S3, ECS/Fargate, IAM, CloudFront, WAF), Terraform infrastructure-as-code (100+ modular multi-cloud modules), and security hardening across the entire development environment. Strong on backend architecture and distributed-systems design, Python automation and data pipelines, and CI/CD on GitHub Actions and CircleCI.
+    - source: fieldnation
+      text: >-
+        Principal Software Engineer and Architect with 12+ years building scalable, reliable, and maintainable services. 4+ years as software architect or backend lead across commerce, fintech, media, and cloud platforms — progressing from full-stack engineer to architect. Hands-on across the full lifecycle: AWS serverless and containerized microservices, polyglot backends (Golang, Node.js, JavaScript, PHP, Ruby on Rails), React frontends, and SQL + NoSQL datastores. Delivered high-throughput, real-time systems including ride-sharing driver matching and an agent platform of ~200 REST API endpoints across 16 domains.
 
 skills:
   - category: Analytics & Data Warehousing
@@ -67,8 +71,8 @@ skills:
     sources: [source, exnaton, optimizely, zipdev]
 
   - category: Backend Development & APIs
-    items: [Golang (Fiber, Echo, Gin), Ruby on Rails (3-7), Monolith Architecture, Service Objects, Rails Engines, Python, Node.js, Java Spring Boot, Swift (Vapor), C#, REST API Design, RESTful APIs, JSON:API, GraphQL, Microservices Architecture, Distributed Systems Design, Data Pipelines, Apache Airflow / Workflow Orchestration Concepts]
-    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc]
+    items: [Golang (Fiber, Echo, Gin), Ruby on Rails (3-7), Monolith Architecture, Service Objects, Rails Engines, Python, Node.js, PHP, Java Spring Boot, Swift (Vapor), C#, REST API Design, RESTful APIs, JSON:API, GraphQL, Microservices Architecture, Distributed Systems Design, Data Pipelines, Apache Airflow / Workflow Orchestration Concepts]
+    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc, fieldnation]
 
   - category: Frontend Development
     items: [React.js, Next.js, AngularJS (1 & 2), JavaScript, TypeScript, Stimulus JS, Hotwire, Turbo, Tailwind CSS, ERB, View Components, WebSocket, Server-Sent Events (SSE), HTML5, CSS3, D3.js, Data Visualization, Component Libraries]
@@ -137,8 +141,9 @@ skills:
 experience:
   - company: BareMetalCloud
     roles:
-      - {title: Founding Platform Engineer, sources: [source, oneleet, optimizely, optimizely_ssc, oscilar, greenbone, opensc]}
-      - {title: Founding Platform Engineer & Fullstack Architect, sources: [exnaton]}
+      - {title: Founding Platform Engineer, sources: [fieldnation]}
+      - {title: Senior Platform Engineer, sources: [source, oneleet, optimizely, optimizely_ssc, oscilar, greenbone, opensc]}
+      - {title: Senior Platform Engineer & Fullstack Architect, sources: [exnaton]}
       - {title: Senior Backend Engineer, sources: [zipdev]}
     location: Turkey (Remote)
     start_date: 2026-03
@@ -147,8 +152,8 @@ experience:
     description: >-
       Greenfield founding-engineer role: designed and built a bare-metal cloud and application platform for AI agents from scratch — the compute layer agents provision, deploy isolated workloads on, and self-manage at runtime through purpose-built APIs.
     highlights:
-      - text: "Founding engineer on a bare-metal cloud and application platform built for AI agents; designed and shipped ~200 REST API endpoints across 16 domains in Go (Fiber) with a React frontend, on PostgreSQL, TimescaleDB, and Redis"
-        sources: [source, oneleet, optimizely, exnaton, oscilar, greenbone]
+      - text: "Founding engineer on a greenfield cloud and application platform built for AI agents; led the discovery, definition, and delivery of ~200 REST API endpoints across 16 domains in Go (Fiber) with a React frontend on PostgreSQL, TimescaleDB, and Redis, shipping at high velocity using AI-native (Claude Code) development workflows"
+        sources: [source, oneleet, optimizely, exnaton, oscilar, greenbone, fieldnation]
       - text: "Built the platform as a testable E2E product — table-driven Go unit tests, integration tests against real cloud-provider SDKs, and CI gates running the full suite per change"
         sources: [greenbone]
       - text: "Designed and optimized PostgreSQL schemas and TimescaleDB hypertables for high-volume VM-state, agent telemetry, and job-step tracking data, tuned for append-heavy, low-latency writes"
@@ -201,7 +206,7 @@ experience:
           - {text: "Envelope encryption, Argon2id vault, HMAC nonce-replay protection, SSRF protection, API-key rotation and revocation", sources: [source, oneleet, oscilar, greenbone]}
         sources: [source, oneleet, oscilar, greenbone]
     stack: [Golang (Fiber/Echo/Gin), Ruby on Rails 7, Python, JavaScript, TypeScript, React, Next.js, REST APIs, PostgreSQL, TimescaleDB, Redis, Asynq, Sidekiq, ActionCable, Stimulus JS, Tailwind CSS, k3s, k0s, MicroK8s, Docker, Helm, Terraform, AWS SDK, GCP SDK, Azure SDK, Envoy Proxy, Cloudflare Tunnels, Overlay Networking, OpenSearch, Prometheus, Distributed Tracing, Claude Code, Codex]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
 
   - company: Kahf
     roles:
@@ -232,7 +237,7 @@ experience:
       - text: "Implemented multiple Kubernetes operators and platform tooling in Golang to automate repetitive operations and improve developer experience for the engineering team"
         sources: [source, oneleet, oscilar, greenbone]
     stack: [Golang, Ruby on Rails 6-7, Python, Bash, PostgreSQL (CloudNativePG), Redis, Sidekiq, Terraform, Ansible, Helm, GitOps, GitLab CI/CD, MicroK8s, Kubernetes, Traefik, Cert-Manager, Prometheus, Grafana, Loki, Tempo, CloudNativePG, MariaDB Operator, MongoDB, OpenEBS, Kyverno, Zitadel, KEDA, Docker]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
 
   - company: BitByte Technology
     roles:
@@ -263,7 +268,7 @@ experience:
       - text: "Designed data-migration strategies for merchants onboarding onto the platform, handling product catalogs, customer data, and order history across JSON, CSV, and XLSX formats — large-scale analytics data integration in a multi-tenant MarTech environment; facilitated merchant enablement sessions"
         sources: [optimizely, optimizely_ssc]
     stack: [Ruby on Rails 7, Spree Commerce, Next.js, JavaScript, TypeScript, Python, REST APIs, JSON:API, JSON, CSV, XLSX, PostgreSQL, Redis, Sidekiq, RSpec, Stimulus JS, Tailwind CSS, AWS, GCP, Hetzner, Contabo]
-    sources: [source, optimizely, optimizely_ssc, zipdev]
+    sources: [source, optimizely, optimizely_ssc, zipdev, fieldnation]
 
   - company: SmartFinancial
     roles:
@@ -299,7 +304,7 @@ experience:
       - text: "Worked with TypeScript in React components and integrated Stimulus JS for lightweight frontend interactivity"
         sources: [zipdev]
     stack: [Ruby on Rails 7, RSpec, Sidekiq, JavaScript, TypeScript, Python, React.js, Stimulus JS, REST APIs, JSON, CSV, MySQL, PostgreSQL, Docker, AWS (ECS/Fargate, RDS Aurora, CloudFront, ALB, WAF, Lambda, S3, Redshift, ElastiCache, KMS, ACM, SSM), Terraform, Drone CI, Packer, GCP]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
 
   - company: Berlingske Media (24Syv)
     roles:
@@ -331,7 +336,7 @@ experience:
       - text: "Developed 20+ Python automation scripts and ML-assisted audio processing pipelines"
         sources: [source, optimizely, opensc]
     stack: [Ruby on Rails 6, Golang, Python, Java Spring Boot, Node.js, Kubernetes, Kafka, Elasticsearch, OpenSearch, PostgreSQL, MongoDB, MySQL, Redis, RSpec, Grafana, Getstream, Google Speech-to-Text, AWS (ECS, ECR, S3, CloudFront, ElastiCache), Drone CI]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
 
   - company: Seedrs (acquired by Republic)
     roles:
@@ -358,7 +363,7 @@ experience:
       - text: "Took end-to-end ownership of architectural decisions from design through implementation, considering long-term maintenance; advocated customer needs back to Product and Engineering"
         sources: [oneleet, optimizely, zipdev]
     stack: [Ruby on Rails 6, PostgreSQL, MySQL, Python, REST APIs, JSON, CSV, AWS ECS, Firebase, Docker, Datadog, Looker, React.js]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, fieldnation]
 
   - company: MonstarLab Bangladesh
     roles:
@@ -410,7 +415,7 @@ experience:
         stack: [Ruby on Rails, Golang, Kubernetes, Kafka, Elasticsearch, MongoDB, Google Speech-to-Text]
         sources: [source]
     stack: [Ruby on Rails (4/5/6), Golang, Java Spring Boot, Swift (Vapor), AngularJS, JavaScript, Python, REST APIs, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Kafka, Sidekiq, Docker, Kubernetes, AWS (EC2, S3, Lambda, SES, SNS, Elastic Transcoder, API Gateway, ELB), Jenkins, CircleCI, Nginx, FFmpeg]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
 
   - company: CodersTrust Bangladesh
     roles:
@@ -437,7 +442,7 @@ experience:
       - text: "Deployed and managed Rails applications on Heroku with proper pipeline configuration and add-on integrations"
         sources: [zipdev]
     stack: [Ruby on Rails 4, PHP, PostgreSQL, AngularJS, jQuery, D3.js, Heroku, AWS (EC2, S3, Lambda, API Gateway, Elastic Transcoder), FFmpeg, Stripe, PayPal, Twilio]
-    sources: [source, optimizely, optimizely_ssc, zipdev, opensc]
+    sources: [source, optimizely, optimizely_ssc, zipdev, opensc, fieldnation]
 
   - company: Epistocracy
     roles:
