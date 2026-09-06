@@ -5,7 +5,7 @@
 # Every highlight / skill / summary is tagged with its source CV(s).
 # Consumed downstream by the frontend builder skill (FE not generated here).
 version: 1
-last_updated: 2026-08-03
+last_updated: 2026-09-06
 
 source_key:
   source: "source/cv_original.md"
@@ -18,6 +18,7 @@ source_key:
   greenbone: "companies/greenbone/senior_golang_software_engineer/cv.md"
   opensc: "companies/opensc/software_engineer_infrastructure_devops/cv.md"
   fieldnation: "companies/fieldnation/principal_software_engineer_architect/cv.md"
+  cognizant: "companies/cognizant/senior_java_backend_engineer/cv.md"
 
 profile:
   name: MD MAZHARUL ISLAM
@@ -60,6 +61,9 @@ profile:
     - source: fieldnation
       text: >-
         Principal Software Engineer and Architect with 12+ years building scalable, reliable, and maintainable services. 4+ years as software architect or backend lead across commerce, fintech, media, and cloud platforms — progressing from full-stack engineer to architect. Hands-on across the full lifecycle: AWS serverless and containerized microservices, polyglot backends (Golang, Node.js, JavaScript, PHP, Ruby on Rails), React frontends, and SQL + NoSQL datastores. Delivered high-throughput, real-time systems including ride-sharing driver matching and an agent platform of ~200 REST API endpoints across 16 domains.
+    - source: cognizant
+      text: >-
+        Backend engineer with 12+ years designing scalable distributed systems and REST APIs, anchored by 7 years of Java Spring Boot delivery at MonstarLab (2015–2022): engineered driver-matching, route optimization, and dynamic-pricing microservices for a high-traffic Uber competitor, and delivered Java Spring Boot systems for enterprise clients across banking, telecom, and commerce verticals. Since then, built and operated large-scale backend platforms in Go (~200 API endpoints, multi-tenant isolation, Kafka event streaming), bringing current production discipline — CI/CD, Kubernetes, AWS, observability, DevSecOps — back to Java delivery.
 
 skills:
   - category: Analytics & Data Warehousing
@@ -71,8 +75,8 @@ skills:
     sources: [source, exnaton, optimizely, zipdev]
 
   - category: Backend Development & APIs
-    items: [Golang (Fiber, Echo, Gin), Ruby on Rails (3-7), Monolith Architecture, Service Objects, Rails Engines, Python, Node.js, PHP, Java Spring Boot, Swift (Vapor), C#, REST API Design, RESTful APIs, JSON:API, GraphQL, Microservices Architecture, Distributed Systems Design, Data Pipelines, Apache Airflow / Workflow Orchestration Concepts]
-    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc, fieldnation]
+    items: [Golang (Fiber, Echo, Gin), Ruby on Rails (3-7), Monolith Architecture, Service Objects, Rails Engines, Python, Node.js, PHP, Java (8/11/17/21), Java Spring Boot, Spring MVC, Spring Data JPA, Spring Security (OAuth2/JWT), Hibernate/JPA, Swift (Vapor), C#, Maven, Gradle, REST API Design, RESTful APIs, JSON:API, GraphQL, Microservices Architecture, Distributed Systems Design, Data Pipelines, Apache Airflow / Workflow Orchestration Concepts]
+    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc, fieldnation, cognizant]
 
   - category: Frontend Development
     items: [React.js, Next.js, AngularJS (1 & 2), JavaScript, TypeScript, Stimulus JS, Hotwire, Turbo, Tailwind CSS, ERB, View Components, WebSocket, Server-Sent Events (SSE), HTML5, CSS3, D3.js, Data Visualization, Component Libraries]
@@ -80,11 +84,11 @@ skills:
 
   - category: Databases
     items: [PostgreSQL (Schema Design, Query Optimization, Indexing, Connection Pooling, Replication, CloudNativePG, WAL Archiving, Barman), TimescaleDB, MySQL, MongoDB, Redis, DynamoDB, Cassandra, Neo4j, Vector Databases, OpenSearch, Elasticsearch]
-    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone]
+    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, cognizant]
 
   - category: Messaging, Streaming & Background Processing
     items: [Apache Kafka, RabbitMQ, AWS SQS/SNS, Redis Pub/Sub, Asynq (Distributed Job Queues), Sidekiq, Resque, ActiveJob, Event-Driven Design, Distributed Systems, Dead Letter Queues, Retry Logic, Real-Time Streaming, Asynchronous Job Processing]
-    sources: [source, oneleet, exnaton, zipdev, oscilar, greenbone]
+    sources: [source, oneleet, exnaton, zipdev, oscilar, greenbone, cognizant]
 
   - category: Observability & SRE
     items: [Prometheus, Grafana, CloudWatch, Loki, Tempo, Datadog, PagerDuty, Alertmanager, Pyroscope, cAdvisor, BotKube, Distributed Tracing, SLO/SLA Definition, Incident Management, On-Call, Post-Mortems, Capacity Planning, Cost Modelling, Disaster Recovery]
@@ -92,15 +96,15 @@ skills:
 
   - category: Cloud Platforms
     items: [AWS (EKS, ECS/Fargate, EC2, RDS Aurora, Lambda, S3, CloudFront, IAM, Route 53, VPC, ALB/NLB, DynamoDB, OpenSearch, CodePipeline, WAF, KMS, EventBridge, Redshift, Cognito, SES/SNS/SQS, ACM, SSM, CloudFormation, CloudWatch), GCP (GKE, Compute Engine, Pub/Sub, Firestore, Speech-to-Text), Azure (AKS, Blob Storage, Cosmos DB, Azure AD, Azure VM), Heroku, Bare-metal/VPS (Hetzner, OVHcloud, Contabo, DigitalOcean)]
-    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, opensc]
+    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, opensc, cognizant]
 
   - category: Containers, Orchestration & IaC
     items: [Kubernetes (k3s, k0s, MicroK8s HA, bare-metal, EKS/AKS/GKE), Docker, Docker Compose, Helm, KEDA, VPA, Rancher RemoteDialer, Terraform v1.0+ (multi-cloud, modular), Ansible, GitOps, Cloud-Init, Packer, AWS CloudFormation]
-    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc]
+    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc, cognizant]
 
   - category: CI/CD & Developer Experience
     items: [GitHub Actions (self-hosted runners/ARC), GitLab CI/CD (self-hosted), Drone CI, CircleCI, Jenkins, CodeBuild/CodePipeline, CI/CD Pipeline Design, Developer Experience]
-    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc]
+    sources: [source, oneleet, exnaton, optimizely, zipdev, oscilar, greenbone, opensc, cognizant]
 
   - category: Networking
     items: [Overlay/mesh networking, Envoy Proxy, Traefik v2 (OIDC, middleware), Cert-Manager, Cloudflare (DNS, CDN, WAF, Tunnels), MetalLB, Nginx, VPC peering, SOCKS proxy, CGNAT]
@@ -119,8 +123,8 @@ skills:
     sources: [source, optimizely, zipdev]
 
   - category: Testing & Quality
-    items: [RSpec, TDD/BDD, Table-Driven Tests, Unit / Integration / E2E Testing, Test Automation, CI Test Gates, Code Review Standards, Pair Programming, Clean Code, FactoryBot, SimpleCov, CI/CD Testing, Test Coverage 90%+, Design Documentation]
-    sources: [source, zipdev, greenbone, opensc]
+    items: [RSpec, JUnit, Mockito, TDD/BDD, Table-Driven Tests, Unit / Integration / E2E Testing, Test Automation, CI Test Gates, Code Review Standards, Pair Programming, Clean Code, FactoryBot, SimpleCov, CI/CD Testing, Test Coverage 90%+, Design Documentation]
+    sources: [source, zipdev, greenbone, opensc, cognizant]
 
   - category: Solutions Architecture & Customer Onboarding
     items: [Customer-Facing Technical Roles, Solution Design, Integration Architecture, Migration Leadership, Technical Discovery, Pre-Sales Scoping, Workshops & Enablement, LLD to HLD System Design, Multi-Project Management, Technical Documentation]
@@ -132,7 +136,7 @@ skills:
 
   - category: Technical Leadership
     items: [Architecture Guidance, End-to-End Ownership, Cross-Functional Leadership, Mentoring Engineers, Design Reviews, Agile/Scrum, Managing 15+ Engineer Teams]
-    sources: [source, zipdev, optimizely]
+    sources: [source, zipdev, optimizely, cognizant]
 
   - category: Scripting & Automation
     items: [Bash (infrastructure automation, backup/restore, health checks), Python (monitoring agents, DB tooling, ML data pipelines)]
@@ -141,7 +145,7 @@ skills:
 experience:
   - company: BareMetalCloud
     roles:
-      - {title: Founding Platform Engineer, sources: [fieldnation]}
+      - {title: Founding Platform Engineer, sources: [fieldnation, cognizant]}
       - {title: Senior Platform Engineer, sources: [source, oneleet, optimizely, optimizely_ssc, oscilar, greenbone, opensc]}
       - {title: Senior Platform Engineer & Fullstack Architect, sources: [exnaton]}
       - {title: Senior Backend Engineer, sources: [zipdev]}
@@ -153,7 +157,7 @@ experience:
       Greenfield founding-engineer role: designed and built a bare-metal cloud and application platform for AI agents from scratch — the compute layer agents provision, deploy isolated workloads on, and self-manage at runtime through purpose-built APIs.
     highlights:
       - text: "Founding engineer on a greenfield cloud and application platform built for AI agents; led the discovery, definition, and delivery of ~200 REST API endpoints across 16 domains in Go (Fiber) with a React frontend on PostgreSQL, TimescaleDB, and Redis, shipping at high velocity using AI-native (Claude Code) development workflows"
-        sources: [source, oneleet, optimizely, exnaton, oscilar, greenbone, fieldnation]
+        sources: [source, oneleet, optimizely, exnaton, oscilar, greenbone, fieldnation, cognizant]
       - text: "Built the platform as a testable E2E product — table-driven Go unit tests, integration tests against real cloud-provider SDKs, and CI gates running the full suite per change"
         sources: [greenbone]
       - text: "Designed and optimized PostgreSQL schemas and TimescaleDB hypertables for high-volume VM-state, agent telemetry, and job-step tracking data, tuned for append-heavy, low-latency writes"
@@ -169,11 +173,11 @@ experience:
       - text: "Designed a reverse-tunnel agent system for remote management — agents run inside user compute with zero inbound ports and the platform dials back on demand; covers multi-platform binary distribution (Helm, curl-install), capability discovery, heartbeat health monitoring, and cryptographically safe token-exchange registration"
         sources: [source]
       - text: "Implemented multi-tenant isolation and security: envelope encryption (KEK/DEK, AES-256-GCM) for field-level data, a zero-knowledge vault with Argon2id key derivation, SSRF protection, HMAC message signing with nonce replay protection, and API-key lifecycle management with rotation grace periods and emergency revocation"
-        sources: [source, oneleet, oscilar, greenbone, opensc]
+        sources: [source, oneleet, oscilar, greenbone, opensc, cognizant]
       - text: "Implemented observability end-to-end: Prometheus metrics across agent connections, VM states, and tunnel operations; distributed tracing; PagerDuty/Slack alerting with severity-based routing; TimescaleDB-backed job step tracking for diagnosability; treated reliability as a product feature with SLOs and incident runbooks"
         sources: [source, oneleet, exnaton, oscilar, opensc]
-      - text: "Built queue-based job orchestration with Asynq (distributed job queues) and a distributed state machine designed for diagnosability and recovery"
-        sources: [source, oneleet, oscilar, greenbone]
+      - text: "Built queue-based job orchestration with Asynq (distributed job queues) and a distributed state machine designed for diagnosability and recovery, handling 30+ concurrency edge cases across distributed backend instances"
+        sources: [source, oneleet, oscilar, greenbone, cognizant]
       - text: "Practiced clean code and rigorous code review on a public-API surface: REST contracts, versioning, and error models consumed by external integrators"
         sources: [greenbone]
       - text: "Architected integration patterns and custom tooling in Python and JavaScript enabling external systems and AI agents to interoperate via public APIs, webhooks, and migration scripts"
@@ -206,11 +210,11 @@ experience:
           - {text: "Envelope encryption, Argon2id vault, HMAC nonce-replay protection, SSRF protection, API-key rotation and revocation", sources: [source, oneleet, oscilar, greenbone]}
         sources: [source, oneleet, oscilar, greenbone]
     stack: [Golang (Fiber/Echo/Gin), Ruby on Rails 7, Python, JavaScript, TypeScript, React, Next.js, REST APIs, PostgreSQL, TimescaleDB, Redis, Asynq, Sidekiq, ActionCable, Stimulus JS, Tailwind CSS, k3s, k0s, MicroK8s, Docker, Helm, Terraform, AWS SDK, GCP SDK, Azure SDK, Envoy Proxy, Cloudflare Tunnels, Overlay Networking, OpenSearch, Prometheus, Distributed Tracing, Claude Code, Codex]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation, cognizant]
 
   - company: Kahf
     roles:
-      - {title: Infrastructure Lead / Platform Engineer, sources: [source, oneleet, optimizely, optimizely_ssc, oscilar, greenbone, opensc]}
+      - {title: Infrastructure Lead / Platform Engineer, sources: [source, oneleet, optimizely, optimizely_ssc, oscilar, greenbone, opensc, cognizant]}
       - {title: Infrastructure Lead & DevOps Engineer, sources: [exnaton]}
       - {title: Platform Engineer, sources: [zipdev]}
     location: Turkey (Remote)
@@ -221,13 +225,13 @@ experience:
       Operated a multi-cloud platform hosting production services across multiple product lines, with full ownership of infrastructure, observability, DevSecOps, and developer experience.
     highlights:
       - text: "Architected and operated a multi-cloud platform on Hetzner bare-metal and OVHcloud hosting 10+ production services across 3 distinct product lines, reducing infrastructure cost 60%+ compared to Azure AKS while maintaining 99.9%+ platform availability"
-        sources: [source, oneleet, optimizely, exnaton, zipdev, oscilar, greenbone, opensc]
+        sources: [source, oneleet, optimizely, exnaton, zipdev, oscilar, greenbone, opensc, cognizant]
       - text: "Established a GitOps-driven delivery workflow using self-hosted GitLab CI/CD and Helm, with a private container registry, enabling fully automated, auditable deployments across production, staging, and development"
-        sources: [source, exnaton, zipdev, greenbone, opensc]
+        sources: [source, exnaton, zipdev, greenbone, opensc, cognizant]
       - text: "Ran PostgreSQL in production via CloudNativePG with WAL archiving and point-in-time recovery; automated backup and disaster recovery with restore verification; tuned queries and indexing, reducing average response times by 40%"
         sources: [source, oneleet, zipdev, oscilar, greenbone]
       - text: "Stood up the full observability stack (Prometheus, Grafana, Loki, Tempo for distributed tracing, Alertmanager) with SLO dashboards, correlation IDs for request tracing, and incident runbooks/post-mortems that standardized triage and cut MTTR; developed data-backed operational insights supporting capacity planning and cost modelling across the platform"
-        sources: [source, oneleet, exnaton, optimizely_ssc, zipdev, oscilar, greenbone, opensc]
+        sources: [source, oneleet, exnaton, optimizely_ssc, zipdev, oscilar, greenbone, opensc, cognizant]
       - text: "Acted as primary on-call engineer, authoring incident response runbooks and post-mortem templates that reduced mean time to recovery by standardizing triage procedures across all production services"
         sources: [source, optimizely]
       - text: "Applied DevSecOps controls: Kyverno policy-as-code (pod security standards, resource validation), Zitadel for SSO/OIDC, HashiCorp Vault and k8s-replicator for secret management, RBAC, and network policies"
@@ -237,7 +241,7 @@ experience:
       - text: "Implemented multiple Kubernetes operators and platform tooling in Golang to automate repetitive operations and improve developer experience for the engineering team"
         sources: [source, oneleet, oscilar, greenbone]
     stack: [Golang, Ruby on Rails 6-7, Python, Bash, PostgreSQL (CloudNativePG), Redis, Sidekiq, Terraform, Ansible, Helm, GitOps, GitLab CI/CD, MicroK8s, Kubernetes, Traefik, Cert-Manager, Prometheus, Grafana, Loki, Tempo, CloudNativePG, MariaDB Operator, MongoDB, OpenEBS, Kyverno, Zitadel, KEDA, Docker]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation, cognizant]
 
   - company: BitByte Technology
     roles:
@@ -254,7 +258,7 @@ experience:
       - text: "Led DevOps automation and backend development for Bitcommerce, a leading e-commerce builder platform (like Shopify) focused on helping entrepreneurs get their e-commerce platform up and running quickly"
         sources: [source]
       - text: "Handled everything from the SaaS platform to the SaaS admin, including inventory management, complex business setup, payment system aggregation, and continuous monitoring"
-        sources: [source]
+        sources: [source, cognizant]
       - text: "Architected Bitcommerce using Ruby on Rails with the Spree extension, designing multi-tenant architecture (apartment gem) for per-shop data isolation while maintaining shared core platform code"
         sources: [zipdev]
       - text: "Implemented complex e-commerce features including inventory management, product variants, dynamic pricing, and multi-payment gateway integration (Stripe, PayPal)"
@@ -268,7 +272,7 @@ experience:
       - text: "Designed data-migration strategies for merchants onboarding onto the platform, handling product catalogs, customer data, and order history across JSON, CSV, and XLSX formats — large-scale analytics data integration in a multi-tenant MarTech environment; facilitated merchant enablement sessions"
         sources: [optimizely, optimizely_ssc]
     stack: [Ruby on Rails 7, Spree Commerce, Next.js, JavaScript, TypeScript, Python, REST APIs, JSON:API, JSON, CSV, XLSX, PostgreSQL, Redis, Sidekiq, RSpec, Stimulus JS, Tailwind CSS, AWS, GCP, Hetzner, Contabo]
-    sources: [source, optimizely, optimizely_ssc, zipdev, fieldnation]
+    sources: [source, optimizely, optimizely_ssc, zipdev, fieldnation, cognizant]
 
   - company: SmartFinancial
     roles:
@@ -284,9 +288,9 @@ experience:
       Backend and full-stack work for a leading US digital insurance marketplace — Rails monolith features, third-party integrations, data pipelines, and DevSecOps.
     highlights:
       - text: "Developed and maintained Ruby on Rails backend services with comprehensive RSpec test coverage (90%+) for a leading US digital insurance marketplace"
-        sources: [source, oneleet, optimizely, exnaton, zipdev, oscilar, greenbone, opensc]
+        sources: [source, oneleet, optimizely, exnaton, zipdev, oscilar, greenbone, opensc, cognizant]
       - text: "Built reliable third-party API integrations (Slack, Facebook, Close CRM) with data synchronization, retry logic, and error handling across the core platform"
-        sources: [source, oneleet, optimizely, oscilar, greenbone, opensc]
+        sources: [source, oneleet, optimizely, oscilar, greenbone, opensc, cognizant]
       - text: "Built complex business logic using Rails service objects for an insurance quote comparison engine with real-time pricing API integrations"
         sources: [zipdev]
       - text: "Implemented Rails background job processing with Sidekiq for async workflows handling 100K+ daily jobs"
@@ -296,7 +300,7 @@ experience:
       - text: "Processed and transformed large datasets (JSON, CSV) through ETL pipelines for data migration, reporting, and analytics synchronization — working directly with Redshift as the data warehouse backend"
         sources: [source, oneleet, optimizely, optimizely_ssc]
       - text: "Redesigned the CI/CD pipeline using Drone CI, Packer, and CodeBuild to produce immutable container images, cutting release cycle time from 40+ minutes to under 10 and enabling multiple deployments per day"
-        sources: [source, oneleet, optimizely, exnaton, oscilar, greenbone, opensc]
+        sources: [source, oneleet, optimizely, exnaton, oscilar, greenbone, opensc, cognizant]
       - text: "Provisioned and managed AWS infrastructure (ECS Fargate, RDS Aurora, CloudFront, ALB, WAF, Redshift, ElastiCache) using Terraform across production, staging, and development"
         sources: [source, exnaton, opensc]
       - text: "Applied DevSecOps controls: IAM least-privilege policies, KMS encryption at rest, AWS Secrets Manager, WAF rule sets, and SSM Parameter Store for centralized configuration"
@@ -304,7 +308,7 @@ experience:
       - text: "Worked with TypeScript in React components and integrated Stimulus JS for lightweight frontend interactivity"
         sources: [zipdev]
     stack: [Ruby on Rails 7, RSpec, Sidekiq, JavaScript, TypeScript, Python, React.js, Stimulus JS, REST APIs, JSON, CSV, MySQL, PostgreSQL, Docker, AWS (ECS/Fargate, RDS Aurora, CloudFront, ALB, WAF, Lambda, S3, Redshift, ElastiCache, KMS, ACM, SSM), Terraform, Drone CI, Packer, GCP]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation, cognizant]
 
   - company: Berlingske Media (24Syv)
     roles:
@@ -318,7 +322,7 @@ experience:
       Real-time Danish news and podcast platform — backend development, event-driven microservices, ML-assisted audio processing, and third-party data integrations.
     highlights:
       - text: "Led DevOps automation and backend development for 24Syv, a real-time Danish news and podcast platform, designing microservices in Ruby on Rails and Golang (backed by PostgreSQL, MongoDB, and Redis) on Kubernetes on AWS, with Kafka for event streaming and Elasticsearch/OpenSearch for full-text content search"
-        sources: [source, oneleet, optimizely, exnaton, zipdev, oscilar, greenbone, opensc]
+        sources: [source, oneleet, optimizely, exnaton, zipdev, oscilar, greenbone, opensc, cognizant]
       - text: "Developed Rails API serving real-time content with WebSocket integration via ActionCable for live news updates and podcast streaming"
         sources: [zipdev]
       - text: "Built a podcast recommendation engine with ML-assisted audio processing pipelines using Python and Google Speech-to-Text, enabling automated topic clustering and personalised podcast recommendations based on spoken audio content"
@@ -330,13 +334,13 @@ experience:
       - text: "Provisioned AWS infrastructure (ECS, ECR, S3, CloudFront, ElastiCache) via Terraform and operated the platform with Grafana monitoring"
         sources: [opensc]
       - text: "Consumed real-time data from Superfeedr RSS feeds, Twitter and Facebook APIs, and Mixpanel for user analytics with reliable ingestion, retry, and backpressure handling under bursty load; monitored platform health via Grafana and managed Getstream-powered activity feeds"
-        sources: [source, oscilar, greenbone, opensc]
+        sources: [source, oscilar, greenbone, opensc, cognizant]
       - text: "Designed the database schema for high-write workloads with proper indexing, partitioning, and read replica configuration"
         sources: [zipdev]
       - text: "Developed 20+ Python automation scripts and ML-assisted audio processing pipelines"
         sources: [source, optimizely, opensc]
     stack: [Ruby on Rails 6, Golang, Python, Java Spring Boot, Node.js, Kubernetes, Kafka, Elasticsearch, OpenSearch, PostgreSQL, MongoDB, MySQL, Redis, RSpec, Grafana, Getstream, Google Speech-to-Text, AWS (ECS, ECR, S3, CloudFront, ElastiCache), Drone CI]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation, cognizant]
 
   - company: Seedrs (acquired by Republic)
     roles:
@@ -367,7 +371,7 @@ experience:
 
   - company: MonstarLab Bangladesh
     roles:
-      - {title: Backend Lead / Software Architect, sources: [source, oneleet, optimizely, exnaton, optimizely_ssc, oscilar, greenbone, opensc]}
+      - {title: Backend Lead / Software Architect, sources: [source, oneleet, optimizely, exnaton, optimizely_ssc, oscilar, greenbone, opensc, cognizant]}
       - {title: Backend Lead / Software Architect, sources: [zipdev]}
     location: Dhaka, Bangladesh
     start_date: 2015-01
@@ -382,8 +386,10 @@ experience:
         sources: [source, oneleet, optimizely]
       - text: "Established Rails development standards including RSpec testing, CI/CD pipelines, code review standards, and performance optimization; mentored junior developers on best practices and system design"
         sources: [zipdev]
-      - text: "Engineered core driver-matching, route optimisation, and dynamic pricing algorithms in Golang and Java Spring Boot for a high-traffic ride-sharing platform, deployed on AWS (EC2, RDS, Redis)"
-        sources: [source, exnaton, oscilar, greenbone, opensc]
+      - text: "Engineered core driver-matching, route optimisation, and dynamic-pricing microservices in Java Spring Boot and Golang for a high-traffic Uber competitor: REST APIs with Spring MVC, Hibernate/JPA persistence on PostgreSQL/MySQL, Redis caching for hot matching paths, and RabbitMQ-based async processing, deployed on AWS (EC2, RDS, ELB) with Jenkins CI"
+        sources: [source, exnaton, oscilar, greenbone, opensc, cognizant]
+      - text: "Delivered Java Spring Boot backend systems for enterprise clients across banking, telecom, and commerce verticals — layered service architectures, Spring Data JPA repositories, Spring Security with OAuth2/JWT, Kafka event pipelines for asynchronous order and notification flows, and JUnit/Mockito test suites wired into CI gates"
+        sources: [cognizant]
       - text: "Delivered an interactive runway-to-cart fashion video commerce platform in Golang and AngularJS, leveraging FFmpeg and AWS Elastic Transcoder to enable real-time product purchases directly from fashion runway videos"
         sources: [source]
       - text: "Designed a Spotify-like Danish podcast service using Ruby on Rails, Golang, Kubernetes, Kafka, Elasticsearch/OpenSearch, and MongoDB, with ML-driven recommendations and Google Speech-to-Text for audio content indexing"
@@ -401,9 +407,9 @@ experience:
     projects:
       - name: Ride-Sharing Platform
         highlights:
-          - {text: "Core driver-matching, route optimisation, and dynamic pricing algorithms in Golang and Java Spring Boot for a high-traffic Uber competitor, deployed on AWS (EC2, RDS, Redis)", sources: [source, exnaton, oscilar, greenbone]}
-        stack: [Golang, Java Spring Boot, AWS EC2, RDS, Redis]
-        sources: [source, exnaton, oscilar, greenbone]
+          - {text: "Core driver-matching, route optimisation, and dynamic-pricing microservices in Java Spring Boot and Golang for a high-traffic Uber competitor — Spring MVC REST APIs, Hibernate/JPA on PostgreSQL/MySQL, Redis caching, RabbitMQ async processing, AWS (EC2, RDS, ELB) with Jenkins CI", sources: [source, exnaton, oscilar, greenbone, cognizant]}
+        stack: [Java Spring Boot, Spring MVC, Hibernate/JPA, Golang, RabbitMQ, Jenkins, AWS EC2, RDS, ELB, Redis]
+        sources: [source, exnaton, oscilar, greenbone, cognizant]
       - name: Fashion Video Commerce
         highlights:
           - {text: "Interactive runway-to-cart platform in Golang and AngularJS, leveraging FFmpeg and AWS Elastic Transcoder to enable real-time product purchases directly from fashion runway videos", sources: [source]}
@@ -414,8 +420,8 @@ experience:
           - {text: "Spotify-like Danish podcast service in Ruby on Rails, Golang, Kubernetes, Kafka, Elasticsearch, and MongoDB, with ML-driven recommendations and Google Speech-to-Text audio indexing", sources: [source]}
         stack: [Ruby on Rails, Golang, Kubernetes, Kafka, Elasticsearch, MongoDB, Google Speech-to-Text]
         sources: [source]
-    stack: [Ruby on Rails (4/5/6), Golang, Java Spring Boot, Swift (Vapor), AngularJS, JavaScript, Python, REST APIs, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Kafka, Sidekiq, Docker, Kubernetes, AWS (EC2, S3, Lambda, SES, SNS, Elastic Transcoder, API Gateway, ELB), Jenkins, CircleCI, Nginx, FFmpeg]
-    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation]
+    stack: [Ruby on Rails (4/5/6), Golang, Java (8/11/17/21), Java Spring Boot, Spring MVC, Spring Data JPA, Spring Security (OAuth2/JWT), Hibernate/JPA, Maven, Gradle, JUnit, Mockito, Swift (Vapor), AngularJS, JavaScript, Python, REST APIs, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Kafka, Sidekiq, Docker, Kubernetes, AWS (EC2, S3, Lambda, SES, SNS, Elastic Transcoder, API Gateway, ELB), Jenkins, CircleCI, Nginx, FFmpeg]
+    sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation, cognizant]
 
   - company: CodersTrust Bangladesh
     roles:
@@ -430,7 +436,7 @@ experience:
       Backend development for a multi-tenant EdTech platform serving students, mentors, administrators, and investors.
     highlights:
       - text: "Led backend development for a multi-tenant EdTech platform serving students, mentors, administrators, and investors; built with Ruby on Rails 4 on AWS"
-        sources: [source, optimizely, zipdev, opensc]
+        sources: [source, optimizely, zipdev, opensc, cognizant]
       - text: "Enabled real-time video mentoring via the Google Hangouts API with Rails backend WebSocket coordination"
         sources: [source, optimizely, zipdev, opensc]
       - text: "Built interactive D3.js analytics dashboards with Rails backend data aggregation, supporting on-demand PDF and Excel export"
@@ -442,7 +448,7 @@ experience:
       - text: "Deployed and managed Rails applications on Heroku with proper pipeline configuration and add-on integrations"
         sources: [zipdev]
     stack: [Ruby on Rails 4, PHP, PostgreSQL, AngularJS, jQuery, D3.js, Heroku, AWS (EC2, S3, Lambda, API Gateway, Elastic Transcoder), FFmpeg, Stripe, PayPal, Twilio]
-    sources: [source, optimizely, optimizely_ssc, zipdev, opensc, fieldnation]
+    sources: [source, optimizely, optimizely_ssc, zipdev, opensc, fieldnation, cognizant]
 
   - company: Epistocracy
     roles:
@@ -459,7 +465,7 @@ experience:
       - text: "Co-founded and built a political social network from the ground up, leading a distributed team across the USA, Ukraine, and Israel"
         sources: [source, optimizely, zipdev, opensc]
       - text: "Delivered real-time features using WebSocket and Server-Sent Events (SSE) with a Neo4j graph database for relationship-driven content discovery"
-        sources: [source, optimizely, zipdev, opensc]
+        sources: [source, optimizely, zipdev, opensc, cognizant]
       - text: "Implemented Rails-based graph database integration for social connections, content recommendations, and political interest mapping"
         sources: [zipdev]
       - text: "Designed a multi-language Rails application with i18n support for a global political discourse platform"
@@ -467,7 +473,7 @@ experience:
       - text: "Deployed on Heroku with proper scaling configuration, database backups, and monitoring"
         sources: [zipdev]
     stack: [Ruby on Rails 4, PostgreSQL, Neo4j, MySQL, MongoDB, AngularJS, RSpec, Heroku, DigitalOcean]
-    sources: [source, optimizely, optimizely_ssc, zipdev, opensc]
+    sources: [source, optimizely, optimizely_ssc, zipdev, opensc, cognizant]
 
   - company: Gosaily
     roles:
