@@ -219,6 +219,7 @@ experience:
   - company: Kahf
     roles:
       - {title: Infrastructure Lead / Platform Engineer, sources: [source, oneleet, optimizely, optimizely_ssc, oscilar, greenbone, opensc, cognizant, shikho]}
+      - {title: Infrastructure Manager, sources: [shikho]}
       - {title: Infrastructure Lead & DevOps Engineer, sources: [exnaton]}
       - {title: Platform Engineer, sources: [zipdev]}
     location: Turkey (Remote)
@@ -377,6 +378,7 @@ experience:
     roles:
       - {title: Backend Lead / Software Architect, sources: [source, oneleet, optimizely, exnaton, optimizely_ssc, oscilar, greenbone, opensc, cognizant, shikho]}
       - {title: Backend Lead / Software Architect, sources: [zipdev]}
+      - {title: Engineering Manager, sources: [shikho]}
     location: Dhaka, Bangladesh
     start_date: 2015-01
     end_date: 2022-12
