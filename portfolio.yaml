@@ -5,7 +5,7 @@
 # Every highlight / skill / summary is tagged with its source CV(s).
 # Consumed downstream by the frontend builder skill (FE not generated here).
 version: 1
-last_updated: 2026-10-08
+last_updated: 2026-10-11
 
 source_key:
   source: "source/cv_original.md"
@@ -180,6 +180,10 @@ experience:
     highlights:
       - text: "Founding engineer working directly with the founder-CEO on a greenfield cloud and application platform built for AI agents; led the discovery, definition, and delivery of ~200 REST API endpoints across 16 domains in Go (Fiber) with a React frontend on PostgreSQL, TimescaleDB, and Redis, shipping at high velocity using AI-native (Claude Code) development workflows"
         sources: [source, oneleet, optimizely, exnaton, oscilar, greenbone, fieldnation, cognizant, shikho, strativ]
+      - text: "Closed the managed-database epic: shipped PostgreSQL 1.1.0 and MariaDB 1.0.0/1.1.0 on operator-native CRDs — a reconciled Database/User/Grant surface with escrowed per-user secrets — and proved MariaDB point-in-time recovery live with a recovery drill that restored every pre-target row and rejected the poison rows; the catalog mirror carries the SQL grammar behind a key-loss battery, and the create-only provisioning law is wired end to end"
+        sources: [source]
+      - text: "Hardened the verification-drill subsystem end to end — BYOV agent install fallback (checksum-verified binary transfer over ssh, systemd unit restart handling, stale-identity cleanup, redacted evidence logs) and enrollment-token fixes across the import/install/restart paths — and shipped the usage-metering guard (per-org cache, limiter, drill, telemetry) plus deploy-lane seal stamps and zero-agent tunnel status on the status page"
+        sources: [source]
       - text: "Full-stack ownership end to end: designed the API surface and service boundaries in Go, built the React/TypeScript frontend consuming them, and ran the services in production with Prometheus metrics and alerting"
         sources: [strativ]
       - text: "Built the platform as a testable E2E product — table-driven Go unit tests, integration tests against real cloud-provider SDKs, and CI gates running the full suite per change"
@@ -233,7 +237,11 @@ experience:
         highlights:
           - {text: "Envelope encryption, Argon2id vault, HMAC nonce-replay protection, SSRF protection, API-key rotation and revocation", sources: [source, oneleet, oscilar, greenbone]}
         sources: [source, oneleet, oscilar, greenbone]
-    stack: [Golang (Fiber/Echo/Gin), Ruby on Rails 7, Python, JavaScript, TypeScript, React, Next.js, REST APIs, PostgreSQL, TimescaleDB, Redis, Asynq, Sidekiq, ActionCable, Stimulus JS, Tailwind CSS, k3s, k0s, MicroK8s, Docker, Helm, Terraform, AWS SDK, GCP SDK, Azure SDK, Envoy Proxy, Cloudflare Tunnels, Overlay Networking, OpenSearch, Prometheus, Distributed Tracing, Claude Code, Codex]
+      - name: Managed databases (PostgreSQL & MariaDB)
+        highlights:
+          - {text: "Operator-native CRDs with a reconciled Database/User/Grant surface, escrowed per-user secrets, and live-proven MariaDB point-in-time recovery via recovery drills", sources: [source]}
+        sources: [source]
+    stack: [Golang (Fiber/Echo/Gin), Ruby on Rails 7, Python, JavaScript, TypeScript, React, Next.js, REST APIs, PostgreSQL, MariaDB, TimescaleDB, Redis, Asynq, Sidekiq, ActionCable, Stimulus JS, Tailwind CSS, k3s, k0s, MicroK8s, Docker, Helm, Terraform, AWS SDK, GCP SDK, Azure SDK, Envoy Proxy, Cloudflare Tunnels, Overlay Networking, OpenSearch, Prometheus, Distributed Tracing, Claude Code, Codex]
     sources: [source, oneleet, optimizely, optimizely_ssc, exnaton, zipdev, oscilar, greenbone, opensc, fieldnation, cognizant, shikho, datapilot, strativ]
 
   - company: Kahf
